@@ -31,3 +31,7 @@
         └── NotFound.js
 
 ```
+
+## Configure container
+
+Please install first plugin Remote - Container in Visual Studio Code. 
