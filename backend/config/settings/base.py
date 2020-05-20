@@ -48,7 +48,11 @@ THIRD_PARTY_APPS = [
     'rest_framework.authtoken',
     'django_filters'
 ]
-LOCAL_APPS = []
+LOCAL_APPS = [
+    'lahause.users.apps.UsersAppConfig',
+    'lahause.countries.apps.CountriesAppConfig',
+    'lahause.cities.apps.CitiesAppConfig',
+]
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
 # Passwords
