@@ -7,11 +7,11 @@ Conceptual and logical design of the database for the project laHause product of
 
 ## Contents
 
--   [Step 1 - definition of entities](#Phase-1-definition-of-entities)
--   [Step 2 - Relations between Entities](#Step-2-Relations-between-Entities)
-  
+-   [Step 1 - Definition of entities ](#step-1-definition-of-entities)
+-   [Step 2 - Relations between entities ](#step-2-relations-between-entities)
 
-#### Phase 1 - definition of entities
+
+#### Step 1 - Definition of entities
 
 Entity  | Description
 ------- | -------
@@ -26,7 +26,7 @@ tracing | Entity that is responsible for storing the visits do interested in you
 favorite | Entity that stores mark as favorites property that can be accessed later
 
 
-#### Step 2 - Relations between Entities
+#### Step 2 - Relations between entities
 
 Entity | User | Property | Country | City | Location | offer | Publication | tracing | favorite
 -------|------|----------|---------|------|----------|-------|-------------|---------|---------
