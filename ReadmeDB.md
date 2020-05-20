@@ -1,11 +1,17 @@
 
 [Back laHause project readme ](./README.md)
 
-**Decription DataBase Desing project laHause**
+# Decription DataBase Desing project laHause
 
 Conceptual and logical design of the database for the project laHause product of the process of training the program PlatziMaster cohort 1-2020
 
-**Phase 1 - definition of entities:**
+## Contents
+
+-   [Step 1 - definition of entities](#Phase-1-definition-of-entities)
+-   [Step 2 - Relations between Entities](#Step-2-Relations-between-Entities)
+  
+
+#### Phase 1 - definition of entities
 
 Entity  | Description
 ------- | -------
@@ -20,5 +26,18 @@ tracing | Entity that is responsible for storing the visits do interested in you
 favorite | Entity that stores mark as favorites property that can be accessed later
 
 
+#### Step 2 - Relations between Entities
+
+Entity | User | Property | Country | City | Location | offer | Publication | tracing | favorite
+-------|------|----------|---------|------|----------|-------|-------------|---------|---------
+User | X | 0-M | 1-M | 1-M | 1-M | 0-M | X | 0-M | M-M
+Property | 0-M | X | 1-M | 1-M | 1-M | 1-M | X | 1-M | 0-M
+Country | 1-M | 1-M | X | 1-M | M-M | X | X | X | X
+City | 1-M | 1-M | 1-1 | X | 1-M | X | X | X | X
+Location | 1-M | 1-M | M-M | 1-M | X | X | X | X | X
+offer | 0-M | 1-M | X | X | X | X | X | M-M | X
+Publication | 0-M | X | X | X | X | X | X | M-M | X
+tracing | 0-M | 1-M | X | X | X | M-M | M-M | X | X
+favorite | M-M | 0-M | X | X | X | X | X | X | X
 
 [Back laHause project readme ](./README.md)
