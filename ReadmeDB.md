@@ -7,8 +7,8 @@ Conceptual and logical design of the database for the project laHause product of
 
 ## Contents
 
--   [Step 1 - Definition of entities ](#step-1-definition-of-entities)
--   [Step 2 - Relations between entities ](#step-2-relations-between-entities)
+-   [Step 1 - Definition of entities](#step-1-definition-of-entities)
+-   [Step 2 - Relations between entities](#step-2-relations-between-entities)
 
 
 #### Step 1 - Definition of entities
