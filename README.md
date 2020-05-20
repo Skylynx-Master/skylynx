@@ -1,9 +1,11 @@
+
 ## LaHause project
+[![LaHause Banner](./frontend/src/assets/static/lahause-logo-min-mark.png)]()
 
 
 ### Contents
-* [Description DataBase Desing](./ReadmeDB.md)
-* [Guideline Frontend](./frontend/README.md)
+* [Description DataBase design](./ReadmeDB.md)
+* [Frontend style guides](./frontend/README.md)
 
 ### Background
 

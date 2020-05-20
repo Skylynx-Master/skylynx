@@ -1,7 +1,7 @@
 
 [Back laHause project readme ](./README.md)
 
-# Decription DataBase Desing project laHause
+# Description DataBase Design project laHause
 
 Conceptual and logical design of the database for the project laHause product of the process of training the program PlatziMaster cohort 1-2020
 
