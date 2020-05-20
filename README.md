@@ -16,3 +16,4 @@
 ### Installation
 
 ### Credits
+<img src="https://avatars0.githubusercontent.com/u/54652030?s=400&u=e9435b0fb2b600a34ce3bf81dc394d238ac59696&v=4" width="25" height="25">
