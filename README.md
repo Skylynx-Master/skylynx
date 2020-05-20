@@ -2,7 +2,7 @@
 
 
 ### Contents
-* [Decription DataBase Desing](./ReadmeDB.md)
+* [Description DataBase Desing](./ReadmeDB.md)
 * [Guideline Frontend](./frontend/README.md)
 
 ### Background
