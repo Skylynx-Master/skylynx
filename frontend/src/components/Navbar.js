@@ -11,8 +11,9 @@ const Navbar = () => {
       <div className="container-fluid">
         <Link className="Navbar__brand" to="/">
           <img className="Navbar__brand-logo" src={logo} alt="Logo" />
-          <span className="font-weight-light">lahaus</span>
-          <span className="font-weight-bold">space</span>
+          <span className="font-weight-light">LaHause</span>
+          <span className="font-weight-bold">Hola desde LaHause</span>
+          <img className="Navbar__profile"></img>
         </Link>
       </div>
     </div>

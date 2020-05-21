@@ -1,0 +1,24 @@
+.Header {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #47cfac;
+  font-family: "Signika", sans-serif;
+  font-weight: 700;
+  box-shadow: yellow;
+}
+
+.Header-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.Header-link li {
+  margin: 0px 50px;
+  color: 3f3f44;
+  align-content: center;
+}
