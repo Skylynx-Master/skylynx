@@ -1,0 +1,15 @@
+@import "../Vars.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Register-form {
+  width: 300px;
+  margin: 8% auto 0;
+  background: $color-white;
+  padding: 20px;
+  text-align: center;
+}
