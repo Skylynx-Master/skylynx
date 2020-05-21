@@ -22,4 +22,4 @@ pyjwt==1.7.1
 argon2-cffi==20.1.0
 
 # Static files
-whitenoise==5.0.1
+whitenoise==5.1.0

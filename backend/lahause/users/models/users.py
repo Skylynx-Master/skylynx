@@ -27,7 +27,8 @@ class User(LaHauseModel, AbstractUser):
     username = models.CharField(
         verbose_name='username',
         max_length=50,
-        blank=True
+        blank=True,
+        null=True
     )
 
     phone_regex = RegexValidator(
@@ -75,4 +76,4 @@ class User(LaHauseModel, AbstractUser):
     )
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = []
+    REQUIRED_FIELDS = ['username']

@@ -26,7 +26,8 @@ class City(LaHauseModel):
 
     country = models.ForeignKey(
         'countries.Country',
-        on_delete=models.SET_NULL
+        on_delete=models.SET_NULL,
+        null=True
     )
 
     def __str__(self):

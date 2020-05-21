@@ -12,7 +12,7 @@ DEBUG = env.bool('DJANGO_DEBUG', False)
 
 # Language and timezone
 TIME_ZONE = 'America/Bogota'
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es-CO'
 SITE_ID = 1
 USE_I18N = True
 USE_L10N = True
@@ -31,7 +31,7 @@ ROOT_URLCONF = 'config.urls'
 WSGI_APPLICATION = 'config.wsgi.application'
 
 # Users & Authentication
-# AUTH_USER_MODEL = 'users.User'
+AUTH_USER_MODEL = 'users.User'
 
 # Apps
 DJANGO_APPS = [
@@ -143,7 +143,7 @@ EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND', default='django.core.mail.backends.s
 # Admin
 ADMIN_URL = 'admin/'
 ADMINS = [
-    ("""Ivan Chipatecua""", 'ivchip@gmail.com'),
+    ('Ivan Chipatecua', 'ivchip@gmail.com'),
 ]
 MANAGERS = ADMINS
 
