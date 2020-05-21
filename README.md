@@ -6,8 +6,8 @@
 * [Description DataBase design](./ReadmeDB.md)
 * [Frontend style guides](./frontend/README.md)
 * [Installation](#installation)
-* [Credits](#credits)
-
+* [Credits](#user's-guide)
+* [User manual for administrators](#credits)
 ### Description
 
 > Web platform that laHause offer the public all properties that are available on the modalities for lease or sale, so that users can see all the features and choose the place that suits you according to your search parameters.
@@ -20,3 +20,7 @@
 <img src="https://avatars0.githubusercontent.com/u/54652030?s=400&u=e9435b0fb2b600a34ce3bf81dc394d238ac59696&v=4" width="25" height="25"> [Francisco Lopez](https://github.com/pacool84)
 <img src="https://avatars2.githubusercontent.com/u/43865749?s=400&v=4" width="25" height="25"> [José Barrios](https://github.com/jbarriospd)
 <img src="https://avatars1.githubusercontent.com/u/25330387?s=400&v=4" width="25" height="25"> [Cristian Vega](https://github.com/crisav)
+
+### user's Guide
+[User manual for administrators](https://github.com/Skylynx-Master/skylynx/wiki)
+
