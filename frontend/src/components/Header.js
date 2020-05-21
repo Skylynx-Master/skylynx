@@ -1,22 +1,23 @@
 import React from "react";
 import "../assets/styles/components/Header.scss";
+import LaHauseLogo from "../assets/static/LaHauseLogo.png";
+import accountIcon from "../assets/static/accountIcon.png";
 
-function Header() {
+const Header = () => {
   return (
     <header className="Header">
-      <img className="Header-logo"></img>
-      <nav className="Header-Navbar">
-        <ul className="Header-link">
-          <a>
-            <li>Hola header</li>
-          </a>
-          <li>Hola Item</li>
-          <li>Hola Favoritos</li>
-          <li>Hola Favoritos</li>
+      <a>
+        <img className="Header-logo" src={LaHauseLogo}></img>
+      </a>
+      <nav>
+        <ul className="Header-links">
+          <li>Buscar</li>
+          <li>Favoritos</li>
+          <li>Crear Publicación</li>
         </ul>
       </nav>
     </header>
   );
-}
+};
 
 export default Header;

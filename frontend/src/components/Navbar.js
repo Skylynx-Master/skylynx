@@ -1,11 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import '../assets/styles/components/Navbar.scss';
-import logo from '../assets/static/logo.png';
+import "../assets/styles/components/Navbar.scss";
 
 const Navbar = () => {
-
   return (
     <div className="Navbar">
       <div className="container-fluid">
@@ -17,7 +15,7 @@ const Navbar = () => {
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar;

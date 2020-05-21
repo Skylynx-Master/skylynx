@@ -1,24 +1,34 @@
-.Header {
-  padding: 0;
+* {
+  box-sizing: border-box;
   margin: 0;
-  width: 100%;
-  height: 30px;
-  background-color: #47cfac;
-  font-family: "Signika", sans-serif;
-  font-weight: 700;
-  box-shadow: yellow;
+  padding: 0;
 }
 
-.Header-link {
-  margin: 0;
-  padding: 0;
+header {
   display: flex;
-  justify-content: flex-end;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #47cfac;
+}
+
+.Header-logo {
+  width: 120px;
+  height: 40%;
+}
+
+.Header-links {
   list-style: none;
 }
 
-.Header-link li {
-  margin: 0px 50px;
-  color: 3f3f44;
-  align-content: center;
+.Header-links li {
+  display: inline-block;
+  padding: 0px 20px 0px 5px;
+  color: #3f3f44;
+  font-family: "Signika", sans-serif;
+}
+
+.Header-links li:hover {
+  color: #f7f7f7;
+  cursor: pointer;
 }
