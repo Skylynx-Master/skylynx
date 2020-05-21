@@ -1,0 +1,60 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-green;
+  -webkit-box-shadow: 13px 14px 8px -12px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 13px 14px 8px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 13px 14px 8px -12px rgba(0, 0, 0, 0.5);
+}
+
+.Header-logo {
+  width: 120px;
+  height: 40%;
+}
+
+nav {
+  margin: auto 3%;
+  align-items: center;
+}
+
+.Header-links {
+  list-style: none;
+}
+
+.Header-links li {
+  display: inline-block;
+  padding: 0px 20px 0px 5px;
+  color: $color-typography;
+  font-family: "Signika", sans-serif;
+  transition: all 0.5s ease 0s;
+}
+
+.Header-links li:hover {
+  color: $color-white;
+  cursor: pointer;
+}
+
+.Header-links_profile {
+  display: none;
+}
+
+@media screen and (max-width: 780px) {
+  .Header-links li {
+    display: none;
+  }
+  .Header-links_profile {
+    display: flex;
+    width: 20px;
+    height: 20px;
+  }
+}
