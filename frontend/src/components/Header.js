@@ -12,9 +12,9 @@ const Header = () => {
       </Link>
       <nav>
         <ul className="Header-links">
-          <a >
+          <Link to="/filters" >
             <li>Buscar</li>
-          </a>
+          </Link>
           <a>
             <li>Favoritos</li>
           </a>
