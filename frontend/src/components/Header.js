@@ -12,9 +12,9 @@ const Header = () => {
       </Link>
       <nav>
         <ul className="Header-links">
-          <Link to="/register">
+          <a >
             <li>Buscar</li>
-          </Link>
+          </a>
           <a>
             <li>Favoritos</li>
           </a>
