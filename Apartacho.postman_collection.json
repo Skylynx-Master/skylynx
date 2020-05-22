@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "690e524f-12ae-4b9b-a617-d6003483bfc5",
+		"name": "apartacho",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Singup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token afb017cde9328c5439cee578d199679e570ccbc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"This is email\",\n\t\"password\": \"This is password\",\n\t\"password_confirmation\": \"This is password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_host}}/api/v1/users/signup/",
+							"host": [
+								"{{local_host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"signup",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token afb017cde9328c5439cee578d199679e570ccbc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"This is email\",\n\t\"password\": \"This is password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_host}}/users/login/",
+							"host": [
+								"{{local_host}}"
+							],
+							"path": [
+								"users",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token afb017cde9328c5439cee578d199679e570ccbc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"token\": \"This is token\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_host}}/users/verify/",
+							"host": [
+								"{{local_host}}"
+							],
+							"path": [
+								"users",
+								"verify",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Properties",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Countries",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Cities",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Addresses",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Publications",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Offers",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Trackings",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Favorites",
+			"item": [],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

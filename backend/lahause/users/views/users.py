@@ -72,5 +72,5 @@ class UserViewSet(mixins.RetrieveModelMixin,
         serializer = AccountVerificationSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         serializer.save()
-        data = {'message': 'Congratulation, now go share some rides!'}
+        data = {'message': 'Congratulation, now go find to dream!'}
         return Response(data, status=status.HTTP_200_OK)
