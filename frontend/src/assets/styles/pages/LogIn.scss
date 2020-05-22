@@ -1,0 +1,38 @@
+@import "../Vars.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Signika";
+}
+
+.Login-form {
+  width: 660px;
+  height: 660px;
+  margin: 8% auto 0;
+  background-color: $color-white;
+  padding: 20px;
+  text-align: center;
+}
+
+.Login-form h1 {
+  color: $color-typography;
+  margin-bottom: 20px;
+}
+
+.Login-form p {
+  margin: 10px;
+  font-family: "Signika";
+  letter-spacing: 0.5px;
+}
+
+.Login-input {
+  width: 400px;
+  height: 52px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid $color-green;
+  outline: none;
+}

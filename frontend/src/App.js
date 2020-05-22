@@ -5,7 +5,7 @@ import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Register from "./pages/Register";
 import NotFound from "./pages/NotFound";
-import SignIn from "./pages/SignIn";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/register" component={Register} />
-          <Route exact path="/signin" component={SignIn} />
+          <Route exact path="/signin" component={Login} />
           <Route component={NotFound} />
         </Switch>
       </Layout>
