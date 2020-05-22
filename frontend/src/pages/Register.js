@@ -30,7 +30,7 @@ const Register = () => {
         </p>
         <p>
           ¿Ya tienes una cuenta?
-          <Link to="/signin">Ingresa Aquí</Link>
+          <Link to="/login">Ingresa Aquí</Link>
         </p>
         <button type="button" className="Form-button">
           Registrar
