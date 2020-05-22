@@ -1,3 +1,5 @@
+@import "../Vars.scss";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,12 +8,24 @@
 
 .NotFound {
   margin: 50px;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
+  text-align: center;
+}
+
+.NotFound h1 {
+  font-family: "Signika";
+  color: $color-green;
 }
 
 img {
-  width: 60vw;
-  height: 70vh;
+  width: 850px;
+  height: 650px;
+}
+
+.NotFound a {
+  font-size: 35px;
+  text-decoration: none;
+  color: $color-green;
 }
