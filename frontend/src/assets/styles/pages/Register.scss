@@ -4,12 +4,52 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "Signika";
 }
 
 .Register-form {
-  width: 300px;
+  width: 660px;
+  height: 660px;
   margin: 8% auto 0;
   background: $color-white;
   padding: 20px;
   text-align: center;
+}
+
+.Register-form h1 {
+  color: $color-typography;
+  margin-bottom: 20px;
+}
+
+.Register-form p {
+  margin: 10px;
+  font-family: "Signika";
+  letter-spacing: 0.5px;
+}
+
+.Register-input {
+  width: 400px;
+  height: 52px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid $color-green;
+  outline: none;
+}
+
+.Form-button {
+  width: 230px;
+  padding: 10px;
+  color: $color-typography;
+  background-color: $color-peach;
+  border-radius: 20px;
+  font-size: 30px;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
 }
