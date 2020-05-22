@@ -36,3 +36,20 @@
   border: 1px solid $color-green;
   outline: none;
 }
+
+.Login-button {
+  width: 230px;
+  padding: 10px;
+  color: $color-typography;
+  background-color: $color-peach;
+  border-radius: 20px;
+  font-size: 30px;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}

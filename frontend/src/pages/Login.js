@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import "../assets/styles/pages/LogIn.scss"
 
 const Login = () => {
@@ -8,7 +9,7 @@ const Login = () => {
       <form>
         <input type="email" className="Login-input" placeholder="Correo"></input>
         <input type="password" className="Login-input" placeholder="Contraseña"></input>
-        <p>Si no estás registrado, <a>regístrate</a></p>
+        <p>Si no estás registrado, <Link to="/register">Regístrate</Link></p>
         <button type="button" className="Login-button" >Iniciar</button>
       </form>
     </div>
