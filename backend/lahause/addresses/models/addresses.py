@@ -12,3 +12,4 @@ class City(LaHauseModel):
 
     Entity that relates the addresses where the properties are
     """
+    pass

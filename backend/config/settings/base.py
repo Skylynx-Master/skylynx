@@ -52,7 +52,8 @@ LOCAL_APPS = [
     'lahause.users.apps.UsersAppConfig',
     'lahause.countries.apps.CountriesAppConfig',
     'lahause.cities.apps.CitiesAppConfig',
-    'lahause.addresses.apps.addressesAppConfig',
+    'lahause.addresses.apps.AddressesAppConfig',
+
 ]
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
