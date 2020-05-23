@@ -1,6 +1,7 @@
 # PostgreSQL
+# ------------------------------------------------------------------------------
 POSTGRES_HOST=postgres
 POSTGRES_PORT=5432
-POSTGRES_DB=lahause
-POSTGRES_USER=3XZFhH6Zvj2GumfRYHQTNt6fCVQXzhpQ
-POSTGRES_PASSWORD=atCGfKvLfPJVeya6wszdBiCLvsjL79pQg3V4yPZwimkHLW2pj9gskMGmFfLyrTEd
+POSTGRES_DB=apartacho
+POSTGRES_USER=debug
+POSTGRES_PASSWORD=debug

@@ -3,7 +3,6 @@
 __pycache__/
 *.py[cod]
 *$py.class
-000*
 
 # C extensions
 *.so
@@ -80,6 +79,7 @@ ENV/
 # mypy
 .mypy_cache/
 
+
 ### Node template
 # Logs
 logs
@@ -134,6 +134,7 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
+
 ### Linux template
 *~
 
@@ -149,12 +150,71 @@ typings/
 # .nfs files are created when an open file is removed but is still being accessed
 .nfs*
 
+
 ### VisualStudioCode template
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+
+# Provided default Pycharm Run/Debug Configurations should be tracked by git
+# In case of local modifications made by Pycharm, use update-index command
+# for each changed file, like this:
+# git update-index --assume-unchanged .idea/apartacho.iml
+### JetBrains template
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio and Webstorm
+# Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
+
+# User-specific stuff:
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/dictionaries
+
+# Sensitive or high-churn files:
+.idea/**/dataSources/
+.idea/**/dataSources.ids
+.idea/**/dataSources.xml
+.idea/**/dataSources.local.xml
+.idea/**/sqlDataSources.xml
+.idea/**/dynamic.xml
+.idea/**/uiDesigner.xml
+
+# Gradle:
+.idea/**/gradle.xml
+.idea/**/libraries
+
+# CMake
+cmake-build-debug/
+
+# Mongo Explorer plugin:
+.idea/**/mongoSettings.xml
+
+## File-based project format:
+*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+out/
+
+# mpeltonen/sbt-idea plugin
+.idea_modules/
+
+# JIRA plugin
+atlassian-ide-plugin.xml
+
+# Cursive Clojure plugin
+.idea/replstate.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+com_crashlytics_export_strings.xml
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+
 
 ### Windows template
 # Windows thumbnail cache files
@@ -179,6 +239,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+
 
 ### macOS template
 # General
@@ -207,6 +268,7 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
 
 ### SublimeText template
 # Cache files for Sublime Text
@@ -240,6 +302,7 @@ bh_unicode_properties.cache
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
+
 ### Vim template
 # Swap
 [._]*.s[a-v][a-z]
@@ -256,11 +319,15 @@ Session.vim
 # Auto-generated tag files
 tags
 
+
 ### Project template
-lahause/media/
+
+apartacho/media/
+
 .pytest_cache/
+
+
 .ipython/
 .env
 .envs/*
 !.envs/.local/
-.idea

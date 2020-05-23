@@ -1,9 +1,7 @@
 #!/usr/bin/env python
-
-"""Django's manage.py."""
-
 import os
 import sys
+from pathlib import Path
 
 if __name__ == "__main__":
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "config.settings.local")
@@ -26,8 +24,8 @@ if __name__ == "__main__":
         raise
 
     # This allows easy placement of apps within the interior
-    # lahause directory.
-    current_path = os.path.dirname(os.path.abspath(__file__))
-    sys.path.append(os.path.join(current_path, "lahause"))
+    # apartacho directory.
+    current_path = Path(__file__).parent.resolve()
+    sys.path.append(str(current_path / "apartacho"))
 
     execute_from_command_line(sys.argv)

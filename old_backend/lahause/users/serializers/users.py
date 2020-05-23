@@ -3,7 +3,6 @@
 # Django
 from django.conf import settings
 from django.contrib.auth import password_validation, authenticate
-from django.core.validators import RegexValidator
 
 # Django REST Framework
 from rest_framework import serializers
@@ -31,7 +30,7 @@ class UserModelSerializer(serializers.ModelSerializer):
 
         model = User
         fields = (
-            'email',
+            'email', 'password', 'date_of_birth', 'avatar', 'is_real_estate'
         )
 
 
