@@ -1,6 +1,30 @@
 @import '../Vars.scss';
 
 .landing{
+  display: grid;
   grid-area: landing;
-  background-color: mediumvioletred;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    'description';
+  height: 100vh;
+  
+  background-color: $color-white;
+  
+  &__description {
+    grid-area: description;
+    border: 1px solid red;
+    border-radius: 20px;
+    
+  }  
+  &-title {
+    text-align: center;
+  }
 }
+
+// .landing__description {
+
+//   border: 1px solid red;
+//   border-radius: 20px;
+
+// }
