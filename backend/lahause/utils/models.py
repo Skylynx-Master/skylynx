@@ -19,6 +19,7 @@ class LaHauseModel(models.Model):
         auto_now_add=True,
         help_text='Date time on which the object was created.'
     )
+
     modified = models.DateTimeField(
         verbose_name='modified at',
         auto_now=True,

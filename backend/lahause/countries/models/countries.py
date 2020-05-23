@@ -19,6 +19,13 @@ class Country(LaHauseModel):
         max_length=50
     )
 
+    code = models.CharField(
+        verbose_name='code',
+        max_length=5,
+        blank=True,
+        null=True
+    )
+
     def __str__(self):
         """Return country name."""
         return self.name

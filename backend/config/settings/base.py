@@ -53,7 +53,7 @@ LOCAL_APPS = [
     'lahause.countries.apps.CountriesAppConfig',
     'lahause.cities.apps.CitiesAppConfig',
     'lahause.addresses.apps.AddressesAppConfig',
-
+    'lahause.favorites.apps.FavoritesAppConfig',
 ]
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + LOCAL_APPS
 
@@ -146,6 +146,7 @@ EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND', default='django.core.mail.backends.s
 ADMIN_URL = 'admin/'
 ADMINS = [
     ('Ivan Chipatecua', 'ivchip@gmail.com'),
+    ('Carlos Navia', 'cenaviat@gmail.com'),
 ]
 MANAGERS = ADMINS
 
