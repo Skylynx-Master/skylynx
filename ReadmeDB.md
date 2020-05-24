@@ -1,5 +1,5 @@
 
-[Back laHause project readme ](./README.md)
+[Back apartacho project readme ](./README.md)
 
 # Description DataBase Design project apartacho
 
@@ -40,4 +40,4 @@ Publication | 0-M | X | X | X | X | X | X | M-M | X
 tracing | 0-M | 1-M | X | X | X | M-M | M-M | X | X
 favorite | M-M | 0-M | X | X | X | X | X | X | X
 
-[Back laHause project readme ](./README.md)
+[Back apartacho project readme ](./README.md)
