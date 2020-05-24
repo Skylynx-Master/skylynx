@@ -1,4 +1,4 @@
-@import '../Vars.scss';
+@import "../Vars.scss";
 
 $height-header: 50px;
 $height-footer: 50px;
@@ -9,24 +9,7 @@ $width-sidenav: 240px;
   // margin-top: 10px;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-    'landing';
+  grid-template-areas: "landing";
   height: 100vh;
+  overflow-y: hidden;
 }
-
-// .home {
-//   position: relative;
-//   display: grid;
-//   grid-template-columns: 1fr;
-//   grid-template-rows: 1fr;
-//   grid-template-areas:
-//     'sidenav gallery',
-//     'sidenav landing';
-//   height: 100vh;
-//   overflow-x: hidden; // Prevent overflow scroll from hidden sidenav
-
-//   // &--noscroll {
-//   //   overflow-y: hidden;
-//   // }
-  
-// }

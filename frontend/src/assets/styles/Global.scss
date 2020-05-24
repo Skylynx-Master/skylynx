@@ -4,17 +4,16 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Signika", sans-serif;
 }
 
 @media only screen and (min-width: 46.875em) {
-  
   .home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas:
-      'gallery landing';
+    grid-template-areas: "gallery landing";
     height: 100vh;
   }
 }

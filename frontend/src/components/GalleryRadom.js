@@ -9,14 +9,15 @@ const GalleryRadom = () => {
 
 
     <section className="gallery">
-      {/* <div className="transition">
-      <img className="img1" />
-      <img className="img2" />
-      <img className="img3" />
-      <img className="img4" />
-      </div> */}
+      <div className="gallery__slider">
 
-
+        <ul>
+          <li><img className="img1" /></li>
+          <li><img className="img2" /></li>
+          <li><img className="img3" /></li>
+          <li><img className="img4" /></li>
+        </ul>
+      </div> 
     </section>
 
   )

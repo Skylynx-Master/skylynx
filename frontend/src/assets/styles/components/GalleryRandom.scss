@@ -1,121 +1,75 @@
-@import '../Vars.scss';
+@import "../Vars.scss";
 // https://www.w3.org/Graphics/fx/wiki/CSS_Image_Transitions
 .gallery {
-  // position: relative;
   grid-area: gallery;
   background-color: rgb(156, 143, 121);
 }
 
-.transition {
-  position: relative;
-  height: 281px;
-  width: 450px;
-  margin: 0 auto;
+.gallery__slider {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
 }
 
+.gallery__slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
 
-  @keyframes cf4FadeInOut {
-    0% {
-    opacity:1;
+  animation: cambio 20s infinite alternate;
+}
+
+.gallery__slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.gallery__slider img {
+  width: 100%;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
   }
   45% {
-  opacity:1;
+    margin-left: -100%;
   }
-  55% {
-  opacity:0;
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
   }
   100% {
-  opacity:0;
+    margin-left: -300%;
   }
-  }
- 
-
- .transition img {
-   animation-name: cf4FadeInOut;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
-   animation-duration: 8s;
- 
-   animation-name: cf4FadeInOut;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
-   animation-duration: 8s;
- 
-   animation-name: cf4FadeInOut;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
-   animation-duration: 8s;
- 
-   animation-name: cf4FadeInOut;
-   animation-timing-function: ease-in-out;
-   animation-iteration-count: infinite;
-   animation-duration: 8s;
- }
- .transition img:nth-of-type(1) {
-   animation-delay: 6s;
-   animation-delay: 6s;
-   animation-delay: 6s;
-   animation-delay: 6s;
- }
- .transition img:nth-of-type(2) {
-   animation-delay: 4s;
-   animation-delay: 4s;
-   animation-delay: 4s;
-   animation-delay: 4s;
- }
- .transition img:nth-of-type(3) {
-   animation-delay: 2s;
-   animation-delay: 2s;
-   animation-delay: 2s;
-   animation-delay: 2s;
- }
- .transition img:nth-of-type(4) {
-   animation-delay: 0;
-   animation-delay: 0;
-   animation-delay: 0;
-   animation-delay: 0;
- }
- 
-
-img {
-  // position: absolute;
-  left: 0;
 }
+
 .img1 {
-  width: 450px;
-  height: 281px;
   background-color: red;
 }
 
 .img2 {
-
-  width: 450px;
-  height: 281px;
   background-color: green;
 }
 
 .img3 {
-  width: 450px;
-  height: 281px;
   background-color: yellow;
 }
 
 .img4 {
-  width: 450px;
-  height: 281px;
   background-color: purple;
-
-
 }
-
-
-//  .transition {
-//    position:relative;
-//    height:281px;
-//    width:450px;
-//    margin:0 auto;
-//  }
-//  .transition img {
-//    position:absolute;
-//    left:0;
-//  
