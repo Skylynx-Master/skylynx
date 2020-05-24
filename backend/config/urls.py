@@ -6,9 +6,11 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from rest_framework import routers
 from lahause.users.views import users
+from lahause.addresses.views import addresses
 
 router = routers.DefaultRouter()
-router.register(r'users', users.UserViewSet, basename='users')
+router.register(r'users', users.UserViewSet, basename='users'),
+router.register(r'addresses', addresses.AddressViewSet, basename='addresses')
 
 urlpatterns = [
     # Django Admin
