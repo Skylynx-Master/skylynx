@@ -51,7 +51,11 @@ Setting django
 
 * Run server, use this command::
 
-    $ docker-compose -f local.yml run --service-ports django python manage.py runserver
+    $ docker-compose -f local.yml run --rm --service-ports django python manage.py runserver 0.0.0.0:8000
+
+* Run shell, use this command::
+
+    $ docker-compose -f local.yml run --rm --service-ports django python manage.py shell
 
 Setting Up Your Users
 ^^^^^^^^^^^^^^^^^^^^^
