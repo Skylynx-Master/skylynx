@@ -331,3 +331,4 @@ apartacho/media/
 .env
 .envs/*
 !.envs/.local/
+000*
