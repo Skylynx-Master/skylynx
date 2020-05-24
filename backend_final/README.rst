@@ -39,6 +39,20 @@ Setting Docker
 
     $ docker-compose -f local.yml down
 
+Setting django
+^^^^^^^^^^^^^^
+* Build migrations, use this command::
+
+    $ docker-compose -f local.yml run --rm django python manage.py makemigrations
+
+* Run migrations, use this command::
+
+    $ docker-compose -f local.yml run --rm django python manage.py migrate
+
+* Run server, use this command::
+
+    $ docker-compose -f local.yml run --service-ports django python manage.py runserver
+
 Setting Up Your Users
 ^^^^^^^^^^^^^^^^^^^^^
 
