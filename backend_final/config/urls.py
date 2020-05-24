@@ -3,6 +3,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
 from rest_framework.authtoken.views import obtain_auth_token
+from apartacho.countries.views import CountryAPIView
 
 urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
@@ -18,4 +19,5 @@ urlpatterns += [
     path("api/v1/", include("config.api_router")),
     # DRF auth token
     # path("auth-token/", obtain_auth_token),
+    path(r'api/v1/countries/', CountryAPIView.as_view(), name='country-list')
 ]

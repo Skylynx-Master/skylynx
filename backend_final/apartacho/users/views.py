@@ -1,14 +1,5 @@
 """Users views."""
 
-from django.contrib import messages
-from django.contrib.auth import get_user_model
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.urls import reverse
-from django.utils.translation import ugettext_lazy as _
-from django.views.generic import DetailView, RedirectView, UpdateView
-
-"""Users views."""
-
 # Django REST Framework
 from rest_framework import mixins, status, viewsets
 from rest_framework.decorators import action
