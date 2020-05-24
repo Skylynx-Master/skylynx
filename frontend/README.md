@@ -1,4 +1,4 @@
-[Back laHause project readme ](../README.md)
+[Back apartacho project readme ](../README.md)
 
 # Frontend style guides
 
@@ -18,7 +18,7 @@
 ### File Structure
 
 ```
--lahause-react
+-apartacho-react
 .
 ├── package-lock.json
 ├── package.json
