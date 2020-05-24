@@ -24,6 +24,21 @@ Moved to settings_.
 Basic Commands
 --------------
 
+Setting Docker
+^^^^^^^^^^^^^^
+
+* Build local environment docker, use this command::
+
+    $ docker-compose -f local.yml build
+
+* Run docker, use this command::
+
+    $ docker-compose -f local.yml up
+
+* Stop docker, use this command::
+
+    $ docker-compose -f local.yml down
+
 Setting Up Your Users
 ^^^^^^^^^^^^^^^^^^^^^
 
