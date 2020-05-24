@@ -1,5 +1,5 @@
-## LaHause project
-[![LaHause Banner](./frontend/src/assets/static/lahause-logo-min-mark.png)]()
+## apartacho project
+# :house:partacho
 
 
 ### Table of Contents
@@ -13,10 +13,7 @@
 > Web platform that laHause offer the public all properties that are available on the modalities for lease or sale, so that users can see all the features and choose the place that suits you according to your search parameters.
 
 ### Installation
-    run project backend
-
-    `cd backend `
-    `docker-compose up`
+    
 
 ### Credits
 <img src="https://avatars2.githubusercontent.com/u/23039939?s=400&u=ad13cafbbea261f819bb6a8b84dbe915dd80f2ba&v=4" width="25" height="25"> [Iván D. Chipatecua](https://github.com/ivchip)
