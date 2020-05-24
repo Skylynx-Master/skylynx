@@ -1,0 +1,167 @@
+{
+	"info": {
+		"_postman_id": "690e524f-12ae-4b9b-a617-d6003483bfc5",
+		"name": "apartacho",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Singup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token afb017cde9328c5439cee578d199679e570ccbc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"ivchip@gmail.com\",\n\t\"username\": \"ivchip\",\n\t\"password\": \"This is password\",\n\t\"password_confirmation\": \"This is password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_host}}/api/v1/users/signup/",
+							"host": [
+								"{{local_host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"signup",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token afb017cde9328c5439cee578d199679e570ccbc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"ivchip@gmail.com\",\n\t\"password\": \"This is password\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_host}}/api/v1/users/login/",
+							"host": [
+								"{{local_host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Verify",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token afb017cde9328c5439cee578d199679e570ccbc0",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiaXZjaGlwIiwiZXhwIjoxNTkwNTM5MTQ1LCJ0eXBlIjoiZW1haWxfY29uZmlybWF0aW9uIn0.WyXbl1ULDavBSJ0u-ypAayHwv9VI1dR1KmnhR7brTOA\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_host}}/api/v1/users/verify/",
+							"host": [
+								"{{local_host}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"verify",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Properties",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Countries",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Cities",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Addresses",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Publications",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Offers",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Trackings",
+			"item": [],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Favorites",
+			"item": [],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,7 @@
+# PostgreSQL
+# ------------------------------------------------------------------------------
+POSTGRES_HOST=postgres
+POSTGRES_PORT=5432
+POSTGRES_DB=apartacho
+POSTGRES_USER=q3V5dSJvD6eSjJWn
+POSTGRES_PASSWORD=iagit5fbZS6N8gN8MbxuEQmGEwUaTniZ
