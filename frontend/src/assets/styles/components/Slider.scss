@@ -1,7 +1,10 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+
 .container {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -10,18 +13,18 @@
   overflow: hidden;
   background: black;
   i {
-    font-size: 3vw;
+    font-size: 1em;
   }
   &__slide {
     position: relative;
     min-width: 100%;
-    height: 80%;
+    height: 100%;
     transition: 0.5s;
     overflow: hidden;
   }
   &__img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 }
 
@@ -29,14 +32,15 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  width: 10%;
-  height: 80%;
+  width: 15%;
+  height: 15%;
+  border-radius: 10%;
   background: none;;
   border: none;
   outline: none;
   transition: 0.5s;
   &:hover {
-    background-color: rgba(0, 0, 0, 0.356);
+    background-color: rgba(255, 255, 255, 0.705);
     cursor: pointer;
     i {
       color: rgb(119, 119, 119);
@@ -45,12 +49,12 @@
 }
 
 #goLeft {
-  left: 0;
+  left: 10px;
   @extend %btn-styles;
 }
 
 #goRight {
-  right: 0;
+  right: 10px;
   @extend %btn-styles;
 }
 

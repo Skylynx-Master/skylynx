@@ -1,10 +1,10 @@
 import React from "react";
-import PropertyCard from '../components/PropertyCard'
+import PropertyList from '../components/PropertyList'
 
 const Search = () => {
   return (
     <div>
-      <PropertyCard />
+      <PropertyList />
     </div>
   );
 };

@@ -1,4 +1,34 @@
 .propiety {
-  width: 200px;
-  height: 150px;
+  border-top: 1px solid #dfdfdf;
+  width: 60%;
+  height: auto;
+  padding: 10px;
+  display: flex;
+  text-decoration: none;
+  a {
+    width: 60%;
+    text-decoration: none;
+  }
+  &__slider {
+    width: 40%;
+    height: auto;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100%;
+    margin-left: 20px;
+    color: #3f3f44;
+
+    &--title {
+      font-size: 1.2em;
+    }
+    &--subtitle {
+      font-size: 0.9em;
+      margin-top: 20px;
+      color: rgb(126, 126, 126);
+      margin-bottom: 20px;
+    }
+  }
 }
