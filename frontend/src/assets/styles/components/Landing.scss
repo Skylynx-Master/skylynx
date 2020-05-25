@@ -2,64 +2,52 @@
 
 .landing{
   display: grid;
+  grid-area: landing;
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
   
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 80px 180px 80px;
-  grid-gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+
   
-  grid-template-areas: "header   header   header"
-                       "main     main     sidebar"
-                       "footer   footer   footer";
+  grid-template-areas: ".   "
+                       "description     "
+                       "search   "
+                       "button   "
+                       ".   "
+                       ;
 }
-
-/* items */
-
-.landing div {
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  }
 
 /* specific item styles */
 
-.item-1 {
-  background: #b03532;
-  grid-area: header;
+.description {
+  grid-area: description;
+  &--title{ 
+    text-align: center;
+    margin-bottom: 1rem;
+    
+  }
+  &--intro{ 
+    text-align: center;
+    margin: 30px;
+  }
 }
-.item-2 {
-  background: #33a8a5;
-  grid-area: main;
+
+.search {
+  grid-area: search;
   
-  display: grid;
-  
-  grid-template-columns: 1fr 30%;
-  grid-template-rows: auto auto;
-  grid-gap: 20px;
-  
-  grid-template-areas: "header header"
-                       "article sidebar";
+  @include center-flex ;
+  &--ubication {
+    @include input-info
+  }
   
 }
-.item-3 {
-  background: #30997a;
-  grid-area: sidebar;
-}
-.item-4 {
-  background: #6a478f;
-  grid-area: footer;
-}
-.item-5 {
-  background: #da6f2b;
-  grid-area: header;
-}
-.item-6 {
-  background: #3d8bb1;
-  grid-area: article;
-}
-.item-7 {
-  background: #e03f3f;
-  grid-area: sidebar;
+.button {
+  grid-area: button;
+  @include center-flex ;
+  &--send{ 
+    text-align: center;
+    @include button-action;
+  }
 }

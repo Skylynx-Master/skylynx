@@ -6,17 +6,22 @@ const Landing = () => {
   return (
     <section className="landing">
 
-    <div className="item-1">1</div>
-      
-      <div className="item-2">
-        <div className="item-5">5</div>
-        <div className="item-6">6</div>
-        <div className="item-7">7</div>
+      <div className="description">
+        <h1 className="description--title" >Apartacho</h1>
+        <p className="description--intro"> Todos tenemos un sitio, nosotros te ayudamos a conseguirlo</p>
       </div>
-      
-      <div className="item-3">3</div>
-      <div className="item-4">4</div>
-
+      <div className="search">
+      <input
+          type="text"
+          className="search--ubication"
+          placeholder="Ubicacion"
+        ></input>
+      </div>
+      <div className="button">
+      <button type="button" className="button--send">
+          Encontrar
+        </button>
+      </div>
 
     </section>
 
