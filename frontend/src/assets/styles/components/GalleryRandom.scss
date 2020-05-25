@@ -1,5 +1,5 @@
 @import "../Vars.scss";
-// https://www.w3.org/Graphics/fx/wiki/CSS_Image_Transitions
+
 .gallery {
   grid-area: gallery;
   background-color: rgb(156, 143, 121);
@@ -26,6 +26,7 @@
 
 .gallery__slider img {
   width: 100%;
+  object-fit: cover;
 }
 
 @keyframes cambio {
@@ -58,18 +59,3 @@
   }
 }
 
-.img1 {
-  background-color: red;
-}
-
-.img2 {
-  background-color: green;
-}
-
-.img3 {
-  background-color: yellow;
-}
-
-.img4 {
-  background-color: purple;
-}

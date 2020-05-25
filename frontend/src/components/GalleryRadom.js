@@ -1,7 +1,10 @@
 import React from 'react';
 import '../assets/styles/components/GalleryRandom.scss';
-// import officeImage from '../assets/static/office.jpg';
-// import departmentImage from '../assets/static/department.jpg';
+import apartment_01 from '../assets/static/apartment_01.jpg';
+import apartment_02 from '../assets/static/apartment_02.jpg';
+import apartment_03 from '../assets/static/apartment_03.jpg';
+import apartment_04 from '../assets/static/apartment_04.jpg';
+
 
 const GalleryRadom = () => {
 
@@ -12,10 +15,10 @@ const GalleryRadom = () => {
       <div className="gallery__slider">
 
         <ul>
-          <li><img className="img1" /></li>
-          <li><img className="img2" /></li>
-          <li><img className="img3" /></li>
-          <li><img className="img4" /></li>
+          <li><img src={apartment_01} /></li>
+          <li><img src={apartment_02} /></li>
+          <li><img src={apartment_03} /></li>
+          <li><img src={apartment_04} /></li>
         </ul>
       </div> 
     </section>
