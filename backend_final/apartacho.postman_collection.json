@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "690e524f-12ae-4b9b-a617-d6003483bfc5",
+		"_postman_id": "8c29f255-5257-4f4d-b5af-788cc54447ec",
 		"name": "apartacho",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -22,7 +22,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"email\": \"ivchip@gmail.com\",\n\t\"username\": \"ivchip\",\n\t\"password\": \"This is password\",\n\t\"password_confirmation\": \"This is password\"\n}",
+							"raw": "{\n\t\"email\": \"This is email\",\n\t\"password\": \"This is password\",\n\t\"password_confirmation\": \"This is password\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -30,13 +30,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_host}}/api/v1/users/signup/",
+							"raw": "{{host}}/users/signup/",
 							"host": [
-								"{{local_host}}"
+								"{{host}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"users",
 								"signup",
 								""
@@ -59,7 +57,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"email\": \"ivchip@gmail.com\",\n\t\"password\": \"This is password\"\n}",
+							"raw": "{\n\t\"email\": \"This is email\",\n\t\"password\": \"This is password\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -67,13 +65,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_host}}/api/v1/users/login/",
+							"raw": "{{local_host}}/users/login/",
 							"host": [
 								"{{local_host}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"users",
 								"login",
 								""
@@ -96,7 +92,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"token\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiaXZjaGlwIiwiZXhwIjoxNTkwNTM5MTQ1LCJ0eXBlIjoiZW1haWxfY29uZmlybWF0aW9uIn0.WyXbl1ULDavBSJ0u-ypAayHwv9VI1dR1KmnhR7brTOA\"\n}",
+							"raw": "{\n\t\"token\": \"This is token\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -104,13 +100,11 @@
 							}
 						},
 						"url": {
-							"raw": "{{local_host}}/api/v1/users/verify/",
+							"raw": "{{local_host}}/users/verify/",
 							"host": [
 								"{{local_host}}"
 							],
 							"path": [
-								"api",
-								"v1",
 								"users",
 								"verify",
 								""
@@ -129,7 +123,65 @@
 		},
 		{
 			"name": "Countries",
-			"item": [],
+			"item": [
+				{
+					"name": "countries",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Colombia\",\r\n    \"iso_tres\": \"COL\",\r\n    \"iso_dos\": \"CO\",\r\n    \"phone_code\": \"57\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{local_host}}/countries/",
+							"host": [
+								"{{local_host}}"
+							],
+							"path": [
+								"countries",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "countries",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Mexico\",\r\n    \"iso_tres\": \"MEX\",\r\n    \"iso_dos\": \"MX\",\r\n    \"phone_code\": \"52\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/countries/",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"countries",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"protocolProfileBehavior": {}
 		},
 		{
