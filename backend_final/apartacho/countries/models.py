@@ -14,9 +14,30 @@ class Country(ApartachoModel):
     a user and an address.
     """
 
-    name = models.CharField(
+    name = models.CharField( #Colombia
         verbose_name='country name',
         max_length=50
+    )
+
+    iso_tres = models.CharField( #COL
+        verbose_name="iso_tres",
+        max_length=4,
+        blank=True,
+        null=True
+    )
+
+    iso_dos = models.CharField( #CO
+        verbose_name="iso_dos",
+        max_length=3,
+        blank=True,
+        null=True
+    )
+
+    phone_code = models.CharField( #57
+        verbose_name="phone_code",
+        max_length=3,
+        blank=True,
+        null=True
     )
 
     def __str__(self):
