@@ -16,19 +16,19 @@ const Header = () => {
       </Link>
       <nav>
         <ul className="Header-links">
-          <Link to="/filters" >
-            <img src={SearchIcon} alt="search icon"></img>
+          <Link to="/filters" className="Header-icons">
+            <img src={SearchIcon} alt="search icon" ></img>
             <li>Buscar</li>
           </Link>
-          <a>
+          <a className="Header-icons">
             <img src={FavoritesIcon} alt="favorites icon"></img>
             <li>Favoritos</li>
           </a>
-          <a>
+          <a className="Header-icons">
             <img src={CreatePost} alt="create post icon" ></img>
             <li>Crear Publicación</li>
           </a>
-          <Link to="/">
+          <Link to="/" className="Header-icons">
             <img src={HomeIcon} alt="home icon" ></img>
             <li>Inicio</li>
           </Link>
