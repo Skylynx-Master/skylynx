@@ -1,11 +1,22 @@
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.urls import include, path
+from django.urls import include, path, re_path
+from rest_framework.routers import DefaultRouter
 from rest_framework.authtoken.views import obtain_auth_token
-from apartacho.countries.views import CountryAPIView
-from apartacho.addresses.views import AddressAPIView
+from apartacho.countries.views import CountryViewSet
+from apartacho.addresses.views import AddressViewSet
 from apartacho.properties.views import PropertyViewSet
+from apartacho.cities.views import CitiesViewSet
+from apartacho.users.views import UserViewSet
+
+
+router = DefaultRouter()
+router.register('addresses', AddressViewSet, basename='address')
+router.register('countries', CountryViewSet, basename='country')
+router.register('cities', CitiesViewSet, basename='city')
+router.register('properties', PropertyViewSet, basename='property')
+router.register('users', UserViewSet, basename='user')
 
 urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}
@@ -18,10 +29,7 @@ urlpatterns = [
 # API URLS
 urlpatterns += [
     # API base url
-    path("api/v1/", include("config.api_router")),
+    re_path('api/v1/', include(router.urls)),
     # DRF auth token
     # path("auth-token/", obtain_auth_token),
-    path(r'api/v1/countries/', CountryAPIView.as_view(), name='country'),
-    path(r'api/v1/addresses/', AddressAPIView.as_view(), name='address'),
-    path(r'api/v1/properties/', PropertyViewSet.as_view(), name='property'),
 ]

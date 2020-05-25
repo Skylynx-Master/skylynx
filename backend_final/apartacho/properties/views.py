@@ -1,15 +1,15 @@
 """Property views."""
 
 # Django REST Framework
-from rest_framework import generics
+from rest_framework.viewsets import GenericViewSet
+from rest_framework.mixins import (CreateModelMixin,
+                                   ListModelMixin,
+                                   RetrieveModelMixin,
+                                   UpdateModelMixin)
 
 # Filters
 from rest_framework.filters import SearchFilter, OrderingFilter
 from django_filters.rest_framework import DjangoFilterBackend
-
-# Permissions
-from rest_framework.decorators import permission_classes
-from rest_framework.permissions import AllowAny
 
 # Serializers
 from apartacho.properties.serializers import PropertyModelSerializer
@@ -18,9 +18,13 @@ from apartacho.properties.serializers import PropertyModelSerializer
 from apartacho.properties.models import Property
 
 
-@permission_classes([AllowAny])
-class PropertyViewSet(generics.ListCreateAPIView, generics.UpdateAPIView):
+class PropertyViewSet(GenericViewSet,
+                      CreateModelMixin,
+                      RetrieveModelMixin,
+                      UpdateModelMixin,
+                      ListModelMixin):
     """Property view set."""
+
     queryset = Property.objects.filter(is_active=True)
     serializer_class = PropertyModelSerializer
 

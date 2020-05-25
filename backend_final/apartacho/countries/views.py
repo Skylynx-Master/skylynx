@@ -1,11 +1,11 @@
 """Countries views."""
 
 # Django REST Framework
-from rest_framework import generics
-
-# Permissions
-from rest_framework.decorators import permission_classes
-from rest_framework.permissions import AllowAny
+from rest_framework.viewsets import GenericViewSet
+from rest_framework.mixins import (CreateModelMixin,
+                                   ListModelMixin,
+                                   RetrieveModelMixin,
+                                   UpdateModelMixin)
 
 # Serializers
 from apartacho.countries.serializers import CountrySerializer
@@ -14,7 +14,12 @@ from apartacho.countries.serializers import CountrySerializer
 from apartacho.countries.models import Country
 
 
-@permission_classes([AllowAny])
-class CountryAPIView(generics.ListCreateAPIView, generics.UpdateAPIView):
+class CountryViewSet(GenericViewSet,
+                     CreateModelMixin,
+                     RetrieveModelMixin,
+                     UpdateModelMixin,
+                     ListModelMixin):
+    """Countries views."""
+
     queryset = Country.objects.all()
     serializer_class = CountrySerializer

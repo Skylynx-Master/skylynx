@@ -1,15 +1,13 @@
 """Users views."""
 
 # Django REST Framework
-from rest_framework import mixins, status, viewsets
+from rest_framework.viewsets import GenericViewSet
+from rest_framework.mixins import (ListModelMixin,
+                                   RetrieveModelMixin,
+                                   UpdateModelMixin)
+from rest_framework import status
 from rest_framework.decorators import action
 from rest_framework.response import Response
-
-# Permissions
-from rest_framework.permissions import (
-    AllowAny,
-    IsAuthenticated
-)
 
 # Serializers
 from apartacho.users.serializers import (
@@ -23,9 +21,10 @@ from apartacho.users.serializers import (
 from apartacho.users.models import User
 
 
-class UserViewSet(mixins.RetrieveModelMixin,
-                  mixins.UpdateModelMixin,
-                  viewsets.GenericViewSet):
+class UserViewSet(ListModelMixin,
+                  RetrieveModelMixin,
+                  UpdateModelMixin,
+                  GenericViewSet):
     """User view set.
 
     Handle sign up, login and account verification.
@@ -34,16 +33,6 @@ class UserViewSet(mixins.RetrieveModelMixin,
     queryset = User.objects.filter(is_active=True)
     serializer_class = UserModelSerializer
     lookup_field = 'email'
-
-    def get_permissions(self):
-        """Assign permissions based on action."""
-        if self.action in ['signup', 'login', 'verify']:
-            permissions = [AllowAny]
-#        elif self.action in ['retrieve', 'update', 'partial_update', 'profile']:
-#            permissions = [IsAuthenticated, IsAccountOwner]
-        else:
-            permissions = [IsAuthenticated]
-        return [p() for p in permissions]
 
     @action(detail=False, methods=['post'])
     def login(self, request):

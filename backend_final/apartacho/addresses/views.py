@@ -1,11 +1,11 @@
 """Addresses views."""
 
 # Django REST Framework
-from rest_framework import generics
-
-# Permissions
-from rest_framework.decorators import permission_classes
-from rest_framework.permissions import AllowAny
+from rest_framework.viewsets import GenericViewSet
+from rest_framework.mixins import (CreateModelMixin,
+                                   ListModelMixin,
+                                   RetrieveModelMixin,
+                                   UpdateModelMixin)
 
 # Serializers
 from apartacho.addresses.serializers import AddressSerializer
@@ -14,8 +14,10 @@ from apartacho.addresses.serializers import AddressSerializer
 from apartacho.addresses.models import Address
 
 
-@permission_classes([AllowAny])
-class AddressAPIView(generics.ListCreateAPIView, generics.UpdateAPIView):
+class AddressViewSet(GenericViewSet,
+                     CreateModelMixin,
+                     RetrieveModelMixin,
+                     UpdateModelMixin,
+                     ListModelMixin):
     queryset = Address.objects.all()
     serializer_class = AddressSerializer
-
