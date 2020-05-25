@@ -13,7 +13,8 @@
   overflow: hidden;
   background: black;
   i {
-    font-size: 1em;
+    font-size: 1.3em;
+    color: rgba(255, 255, 255, 0.705);
   }
   &__slide {
     position: relative;
@@ -35,7 +36,7 @@
   width: 15%;
   height: 15%;
   border-radius: 10%;
-  background: none;;
+  background: none;
   border: none;
   outline: none;
   transition: 0.5s;
@@ -43,7 +44,7 @@
     background-color: rgba(255, 255, 255, 0.705);
     cursor: pointer;
     i {
-      color: rgb(119, 119, 119);
+      color: rgb(41, 41, 41);
     }
   }
 }
@@ -57,4 +58,3 @@
   right: 10px;
   @extend %btn-styles;
 }
-

@@ -1,0 +1,15 @@
+a {
+  text-decoration: none;
+  color: #3f3f44;
+}
+
+.description {
+  &__title {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  &__subtitle {
+    font-size: 15px;
+    margin: 2% 0px;
+  }
+}

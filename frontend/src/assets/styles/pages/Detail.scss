@@ -1,0 +1,37 @@
+.detail {
+  display: flex;
+  color: #3f3f44;
+  &__container {
+    width: 60vw;  }
+  &__presentation {
+    padding: 60px 60px 0px;
+    &--slider {
+      margin-bottom: 30px;
+      height: auto;
+    }
+  }
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10% 40px 10%;
+    & h3 {
+      font-weight: 400;
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+    &--items {
+      margin: 20px 0;
+    }
+    &--items p {
+      margin: 10px;
+    }
+    &--services ul {
+      margin-left: 18px;
+      & li {
+        margin: 8px 0;
+      }
+    }
+  }
+}
+
+
