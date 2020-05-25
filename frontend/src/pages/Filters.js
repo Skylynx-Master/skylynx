@@ -1,12 +1,13 @@
 import React from "react";
 import SearchAddress from '../components/SearchAddress';
 
-const Filters = () => {
+function Filters () {
   return (
     <div>
       <h1>Hello my friend FILTERS</h1>
       <SearchAddress />
     </div>
+    
   );
 };
 
