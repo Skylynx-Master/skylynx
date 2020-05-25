@@ -23,10 +23,10 @@ const Register = () => {
           placeholder="Confirmar contraseña"
         ></input>
         <p>
-          <span>
+          <span className="Register-checkbox">
             <input type="checkbox"></input>
           </span>
-          Acepto términos y condiciones
+                Acepto términos y condiciones
         </p>
         <p>
           ¿Ya tienes una cuenta?

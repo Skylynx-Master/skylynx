@@ -31,4 +31,33 @@ body {
     width: 30px;
     height: 30px;
   }
+  .Header-icons{
+    display: none;
+  }
+  .Login-form{
+    width: 330px;
+    height: 380px;
+  }
+  .Login-input{
+    width: 287px;
+    height: 61px;
+  }
+
+  .Login-button{
+    font-size: 20px;
+  }
+  .Register-form {
+    width: 330px;
+    height: 495px;
+  }
+  .Register-input{
+    width: 287px;
+    height: 61px;
+  }
+  .Register-form p{
+    font-size: 15px;
+  }
+  .Form-button{
+    font-size: 20px;
+  }
 }
