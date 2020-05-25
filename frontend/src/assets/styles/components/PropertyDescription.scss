@@ -13,3 +13,11 @@ a {
     margin: 2% 0px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .description {
+    &__subtitle {
+      font-size: 1em;
+    }
+  }
+}

@@ -3,9 +3,7 @@ import PropertyList from '../components/PropertyList'
 
 const Search = () => {
   return (
-    <div>
-      <PropertyList />
-    </div>
+    <PropertyList />
   );
 };
 

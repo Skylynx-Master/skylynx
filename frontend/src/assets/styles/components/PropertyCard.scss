@@ -1,4 +1,4 @@
-.propiety {
+.property {
   width: 60%;
   height: auto;
   display: flex;
@@ -8,7 +8,33 @@
     width: 600px;
     margin-right: 20px;
   }
-  &__details:hover {
-    text-decoration: underline;
+  &__description {
+    &--details:hover {
+      text-decoration: underline;
+    }
   }
 }
+/* desktop first que empieces desde el MQ más grande */
+
+@media screen and (max-width: 767px) {
+  .property {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .property {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    &__description {
+      margin: 10px 0;
+    }
+  }
+}
+
+
+
+ 
+

@@ -4,3 +4,14 @@
     padding: 0 8px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .propertyList {
+    padding: 0;
+    width: 100vw;
+    &__Item {
+      padding: 0;
+      width: 100vw;
+    }
+  }
+}

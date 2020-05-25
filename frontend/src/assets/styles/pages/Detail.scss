@@ -2,7 +2,8 @@
   display: flex;
   color: #3f3f44;
   &__container {
-    width: 60vw;  }
+    width: 60vw;  
+  }
   &__presentation {
     padding: 60px 60px 0px;
     &--slider {
@@ -29,6 +30,27 @@
       margin-left: 18px;
       & li {
         margin: 8px 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .detail {
+    display: block;
+    &__container {
+      width: 100vw; 
+    }  
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .detail {
+    &__presentation {
+      padding: 10px;
+      &--slider {
+        margin-bottom: 30px;
+        height: auto;
       }
     }
   }

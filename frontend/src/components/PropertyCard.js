@@ -7,13 +7,13 @@ import '../assets/styles/components/PropertyCard.scss';
 
 const PropertyCard = () => {
   return (
-      <div className='propiety'>
-        <div className='propiety__slider'>
+      <div className='property'>
+        <div className='property__slider'>
           <Slider />
         </div>
-        <div>
+        <div className='property__description' >
           <PropertyDescription />
-          <Link to='#' className='propiety__details'><p>see more details</p></Link>
+          <Link to='#' className='property__description--details'><p>see more details</p></Link>
         </div>
       </div>
   )
