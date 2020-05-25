@@ -70,6 +70,7 @@ THIRD_PARTY_APPS = [
     "allauth.account",
     "allauth.socialaccount",
     "django_celery_beat",
+    "django_filters",
 ]
 
 LOCAL_APPS = [
@@ -77,6 +78,7 @@ LOCAL_APPS = [
     "apartacho.addresses.apps.AddressesConfig",
     "apartacho.cities.apps.CitiesConfig",
     "apartacho.countries.apps.CountriesConfig",
+    "apartacho.properties.apps.PropertiesConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
