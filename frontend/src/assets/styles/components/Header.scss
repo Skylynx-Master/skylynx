@@ -21,6 +21,7 @@ header {
 .Header-logo {
   width: 120px;
   height: 40%;
+  margin-left: 10%;
 }
 
 nav {
@@ -30,6 +31,7 @@ nav {
 
 .Header-links {
   list-style: none;
+
 }
 
 .Header-links li {
@@ -37,6 +39,7 @@ nav {
   padding: 0px 20px 0px 5px;
   color: $color-typography;
   transition: all 0.5s ease 0s;
+  justify-content: center;
 }
 
 .Header-links li:hover {
@@ -44,17 +47,13 @@ nav {
   cursor: pointer;
 }
 
+.Header-links img{
+  height: 32px;
+  width: 32px;
+}
+
 .Header-links_profile {
   display: none;
 }
 
-@media screen and (max-width: 780px) {
-  .Header-links li {
-    display: none;
-  }
-  .Header-links_profile {
-    display: flex;
-    width: 20px;
-    height: 20px;
-  }
-}
+
