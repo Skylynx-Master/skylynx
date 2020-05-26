@@ -1,34 +1,32 @@
-@import '../Vars.scss';
+@import "../Vars.scss";
 
-.landing{
+.landing {
   display: grid;
   grid-area: landing;
   width: 100%;
   max-width: 750px;
   margin: 0 auto;
-  
+
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 1fr);
 
-  
-  grid-template-areas: ".   "
-                       "description     "
-                       "search   "
-                       "button   "
-                       ".   "
-                       ;
+  grid-template-areas:
+    ".   "
+    "description     "
+    "search   "
+    "button   "
+    ".   ";
 }
 
 /* specific item styles */
 
 .description {
   grid-area: description;
-  &--title{ 
+  &--title {
     text-align: center;
     margin-bottom: 1rem;
-    
   }
-  &--intro{ 
+  &--intro {
     text-align: center;
     margin: 30px;
   }
@@ -36,17 +34,20 @@
 
 .search {
   grid-area: search;
-  
-  @include center-flex ;
+
+  @include center-flex;
   &--ubication {
-    @include input-info
+    @include input-info;
   }
-  
+  &__info {
+    text-align: center;
+    padding: 40px;
+  }
 }
 .button {
   grid-area: button;
-  @include center-flex ;
-  &--send{ 
+  @include center-flex;
+  &--send {
     text-align: center;
     @include button-action;
   }
