@@ -4,7 +4,7 @@ import {
   withScriptjs,
   withGoogleMap,
   Marker,
-  InfoWindow
+  InfoWindow,
 } from "react-google-maps";
 import "../assets/styles/components/Map.scss";
 import * as propertySimulation from "./data/propertySimulation.json";
@@ -27,20 +27,23 @@ function Mapping() {
           onClick={() => {
             setSelectedProperty(property);
           }}
-          />
+        />
       ))}
-
-          {selectedProperty && (
-            <InfoWindow
-            position={{
-              lat: selectedProperty.geometry.coordinates[1],
-              lng: selectedProperty.geometry.coordinates[0],
-            }}
-            >
-              <div>Informacion del inmueble</div>
-            </InfoWindow>
-          )}
-        
+      {selectedProperty && (
+        <InfoWindow
+          position={{
+            lat: selectedProperty.geometry.coordinates[1],
+            lng: selectedProperty.geometry.coordinates[0],
+          }}
+        >
+          <div>
+            <h2> {selectedProperty.properties.FACILITY_T} </h2>
+            <h3>{selectedProperty.properties.NAME}</h3>
+            <p>{selectedProperty.properties.ADDRESS} </p>
+            <p> {selectedProperty.properties.DESCRIPTION} </p>
+          </div>
+        </InfoWindow>
+      )}
       ))}
     </GoogleMap>
   );
