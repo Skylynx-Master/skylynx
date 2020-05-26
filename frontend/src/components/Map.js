@@ -1,14 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   GoogleMap,
   withScriptjs,
   withGoogleMap,
   Marker,
+  InfoWindow
 } from "react-google-maps";
 import "../assets/styles/components/Map.scss";
 import * as propertySimulation from "./data/propertySimulation.json";
 
 function Mapping() {
+  const [selectedProperty, setSelectedProperty] = useState(null);
+
   return (
     <GoogleMap
       defaultZoom={10}
@@ -21,7 +24,23 @@ function Mapping() {
             lat: property.geometry.coordinates[1],
             lng: property.geometry.coordinates[0],
           }}
-        />
+          onClick={() => {
+            setSelectedProperty(property);
+          }}
+          />
+      ))}
+
+          {selectedProperty && (
+            <InfoWindow
+            position={{
+              lat: selectedProperty.geometry.coordinates[1],
+              lng: selectedProperty.geometry.coordinates[0],
+            }}
+            >
+              <div>Informacion del inmueble</div>
+            </InfoWindow>
+          )}
+        
       ))}
     </GoogleMap>
   );
