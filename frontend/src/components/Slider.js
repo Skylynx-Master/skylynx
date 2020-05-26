@@ -15,12 +15,12 @@ const Slider = () => {
     <img src={i5} className='container__img'></img>
   ];
   const [x, setX] = useState(0);
-  const goLeft = () => {
+  const handleLeft = () => {
     x === 0 
       ? setX(-100 * (sliderArrow.length - 1)) 
       : setX(x + 100);
   };
-  const goRight = () => {
+  const handleRight = () => {
     ( x === -100 * (sliderArrow.length - 1) )
       ? setX(0) 
       : setX(x - 100);
@@ -36,10 +36,10 @@ const Slider = () => {
           )
         })
       }
-      <button id='goLeft' onClick={goLeft}>
+      <button id='goLeft' onClick={handleLeft}>
         <i class="fas fa-angle-left"></i>
       </button>
-      <button id='goRight' onClick={goRight}>
+      <button id='goRight' onClick={handleRight}>
         <i class="fas fa-angle-right"></i>
       </button>
     </div>
