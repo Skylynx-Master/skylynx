@@ -2,7 +2,6 @@
 
 .gallery {
   grid-area: gallery;
-  background-color: rgb(156, 143, 121);
 }
 
 .gallery__slider {
@@ -26,6 +25,7 @@
 
 .gallery__slider img {
   width: 100%;
+  height: 100vh;
   object-fit: cover;
 }
 

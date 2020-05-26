@@ -7,10 +7,11 @@ const Notfound = () => {
   return (
     <div className="NotFound">
       <h1>¡¡¡Ooppss!! algo salió mal</h1>
-      <img src={notFound} alt="Page Not Found"></img>
-     <p>
-       <Link to="/">Regresa al inicio...</Link>
-      </p> 
+      <img className="NotFound--img" src={notFound} alt="Page Not Found"></img>
+
+      <p>
+        <Link to="/">Regresa al inicio...</Link>
+      </p>
     </div>
   );
 };

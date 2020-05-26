@@ -1,31 +1,29 @@
 @import "../Vars.scss";
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 .NotFound {
-  margin: 50px;
-  display: block;
+  margin: 30px 0;
   align-items: center;
-  justify-content: center;
+
+& h1 {
+  color: $color-typography;
+  text-align: center;
+  font-size: 1.7rem;
+  
+}
+ &--img {
+  max-width: 100%;
+  display:block;
+  margin:auto;
+}
+& p {
+  font-size: 35px;
+  text-decoration: none;  
   text-align: center;
 }
+& a {
+  color: $color-typography;
+  font-size: 1.7rem;
 
-.NotFound h1 {
-  font-family: "Signika";
-  color: $color-green;
 }
 
-img {
-  width: 850px;
-  height: 100vh;
-}
-
-.NotFound a {
-  font-size: 35px;
-  text-decoration: none;
-  color: $color-green;
 }
