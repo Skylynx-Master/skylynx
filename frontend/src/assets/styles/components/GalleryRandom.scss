@@ -1,0 +1,61 @@
+@import "../Vars.scss";
+
+.gallery {
+  grid-area: gallery;
+  background-color: rgb(156, 143, 121);
+}
+
+.gallery__slider {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.gallery__slider ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: cambio 20s infinite alternate;
+}
+
+.gallery__slider li {
+  width: 100%;
+  list-style: none;
+}
+
+.gallery__slider img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+

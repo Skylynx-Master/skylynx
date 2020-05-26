@@ -1,0 +1,15 @@
+@import "../Vars.scss";
+
+$height-header: 50px;
+$height-footer: 50px;
+$width-sidenav: 240px;
+
+.home {
+  display: grid;
+  // margin-top: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "landing";
+  height: 100vh;
+  overflow-y: hidden;
+}

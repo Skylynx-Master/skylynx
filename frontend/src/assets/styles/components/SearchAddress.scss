@@ -1,0 +1,27 @@
+@import "../Vars.scss";
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.SearchAddress{
+  text-align: center;
+}
+
+.SearchAddress p{
+  color: red
+}
+
+.SearchAddress input {
+  width: 600px;
+  height: 52px;
+  border-radius: 20px;
+  padding: 10px;
+  border: 1px solid $color-green;
+  outline: none;
+  font-size: 24px;
+  color: $color-typography;
+}
+

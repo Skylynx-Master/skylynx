@@ -263,3 +263,4 @@ lahause/media/
 .envs/*
 !.envs/.local/
 .idea
+backend/

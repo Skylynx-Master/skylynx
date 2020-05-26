@@ -4,5 +4,64 @@
 
 body {
   margin: 0;
+<<<<<<< HEAD
   font-family: 'Signika', sans-serif;
+=======
+  padding: 0;
+  font-family: "Signika", sans-serif;
+>>>>>>> 3b232322f6cca52045c55604738a8802a9dd66da
+}
+
+@media only screen and (min-width: 46.875em) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "gallery landing";
+    height: 100vh;
+  }
+
+  .search--ubication{
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Header-links li {
+    display: none;
+  }
+  .Header-links_profile {
+    display: flex;
+    width: 30px;
+    height: 30px;
+  }
+  .Header-icons{
+    display: none;
+  }
+  .Login-form{
+    width: 330px;
+    height: 380px;
+  }
+  .Login-input{
+    width: 287px;
+    height: 61px;
+  }
+
+  .Login-button{
+    font-size: 20px;
+  }
+  .Register-form {
+    width: 330px;
+    height: 495px;
+  }
+  .Register-input{
+    width: 287px;
+    height: 61px;
+  }
+  .Register-form p{
+    font-size: 15px;
+  }
+  .Form-button{
+    font-size: 20px;
+  }
 }

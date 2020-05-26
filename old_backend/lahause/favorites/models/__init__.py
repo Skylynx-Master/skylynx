@@ -1,0 +1,1 @@
+from .favorites import Favorite

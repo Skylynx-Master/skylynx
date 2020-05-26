@@ -5,3 +5,9 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .gallery__slider {
+    display: none;
+  }
+}

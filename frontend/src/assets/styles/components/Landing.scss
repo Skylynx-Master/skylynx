@@ -1,0 +1,53 @@
+@import '../Vars.scss';
+
+.landing{
+  display: grid;
+  grid-area: landing;
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, 1fr);
+
+  
+  grid-template-areas: ".   "
+                       "description     "
+                       "search   "
+                       "button   "
+                       ".   "
+                       ;
+}
+
+/* specific item styles */
+
+.description {
+  grid-area: description;
+  &--title{ 
+    text-align: center;
+    margin-bottom: 1rem;
+    
+  }
+  &--intro{ 
+    text-align: center;
+    margin: 30px;
+  }
+}
+
+.search {
+  grid-area: search;
+  
+  @include center-flex ;
+  &--ubication {
+    @include input-info
+  }
+  
+}
+.button {
+  grid-area: button;
+  @include center-flex ;
+  &--send{ 
+    text-align: center;
+    @include button-action;
+  }
+}

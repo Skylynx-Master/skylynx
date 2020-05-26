@@ -1,9 +1,9 @@
 
-[Back laHause project readme ](./README.md)
+[Back apartacho project readme ](./README.md)
 
-# Description DataBase Design project laHause
+# Description DataBase Design project apartacho
 
-Conceptual and logical design of the database for the project laHause product of the process of training the program PlatziMaster cohort 1-2020
+Conceptual and logical design of the database for the project apartacho product of the process of training the program PlatziMaster cohort 1-2020
 
 ## Contents
 
@@ -40,4 +40,4 @@ Publication | 0-M | X | X | X | X | X | X | M-M | X
 tracing | 0-M | 1-M | X | X | X | M-M | M-M | X | X
 favorite | M-M | 0-M | X | X | X | X | X | X | X
 
-[Back laHause project readme ](./README.md)
+[Back apartacho project readme ](./README.md)
