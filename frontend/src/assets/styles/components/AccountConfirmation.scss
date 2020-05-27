@@ -1,0 +1,38 @@
+@import "../Vars.scss";
+
+.AccountConfirmation {
+  width: 660px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8% auto 0;
+  background-color: $color-white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.AccountConfirmation h2 {
+  font-size: 42px;
+  padding: 50px 0;
+  margin: 15px 0;
+}
+
+.AccountConfirmation img {
+  width: 150px;
+  height: 150px;
+}
+
+.AccountConfirmation button {
+  width: 230px;
+  padding: 10px;
+  color: $color-typography;
+  background-color: $color-peach;
+  border-radius: 20px;
+  font-size: 30px;
+  margin: 25px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
