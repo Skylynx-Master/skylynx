@@ -21,5 +21,5 @@ class CountryViewSet(GenericViewSet,
                      ListModelMixin):
     """Countries views."""
 
-    queryset = Country.objects.all()
+    queryset = Country.objects.filter(is_active=True)
     serializer_class = CountrySerializer

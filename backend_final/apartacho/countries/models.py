@@ -14,26 +14,30 @@ class Country(ApartachoModel):
     a user and an address.
     """
 
-    name = models.CharField( #Colombia
+    name = models.CharField(
+        # Colombia
         verbose_name='country name',
         max_length=50
     )
 
-    iso_3 = models.CharField( #COL
-        verbose_name="iso_tres",
-        max_length=4,
-        blank=True,
-        null=True
-    )
-
-    iso_2 = models.CharField( #CO
-        verbose_name="iso_dos",
+    iso_3 = models.CharField(
+        # COL
+        verbose_name="iso three",
         max_length=3,
         blank=True,
         null=True
     )
 
-    phone_code = models.CharField( #57
+    iso_2 = models.CharField(
+        # CO
+        verbose_name="iso two",
+        max_length=2,
+        blank=True,
+        null=True
+    )
+
+    phone_code = models.CharField(
+        # 57
         verbose_name="phone_code",
         max_length=3,
         blank=True,
@@ -42,7 +46,8 @@ class Country(ApartachoModel):
 
     is_active = models.BooleanField(
         verbose_name='active',
-        default=True
+        default=True,
+        help_text='Set to true when the address is active'
     )
 
     def __str__(self):
