@@ -76,4 +76,25 @@ body {
   .AccountConfirmation h2 {
     font-size: 30px;
   }
+
+  .SavedPost {
+    width: 90vw;
+    height: 80vh;
+  }
+  .SavedPost h2 {
+    font-size: 20px;
+  }
+
+  .SavedPost-check {
+    width: 90px;
+    height: 90px;
+  }
+  .SavedPost-clock {
+    width: 70px;
+    height: 70px;
+  }
+
+  .SavedPost a {
+    font-size: 16px;
+  }
 }

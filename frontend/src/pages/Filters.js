@@ -1,18 +1,12 @@
 import React from "react";
-import SearchAddress from '../components/SearchAddress';
-import SavedPost from "../components/SavedPost";
+import SearchAddress from "../components/SearchAddress";
 
-
-function Filters () {
+function Filters() {
   return (
     <div>
-      {/* <SearchAddress /> */}
-      <SavedPost />
-      
-
+      <SearchAddress />
     </div>
-    
   );
-};
+}
 
 export default Filters;
