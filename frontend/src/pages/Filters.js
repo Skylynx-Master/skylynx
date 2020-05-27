@@ -1,16 +1,12 @@
 import React from "react";
-import SearchAddress from '../components/SearchAddress';
-import AccountConfirmation from "../components/AccountConfirmation";
+import SearchAddress from "../components/SearchAddress";
 
-function Filters () {
+function Filters() {
   return (
     <div>
-      {/* <SearchAddress /> */}
-      <AccountConfirmation />
-
+      <SearchAddress />
     </div>
-    
   );
-};
+}
 
 export default Filters;
