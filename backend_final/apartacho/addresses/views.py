@@ -19,5 +19,7 @@ class AddressViewSet(GenericViewSet,
                      RetrieveModelMixin,
                      UpdateModelMixin,
                      ListModelMixin):
-    queryset = Address.objects.all()
+    """Addresses views."""
+
+    queryset = Address.objects.filter(is_active=True)
     serializer_class = AddressSerializer
