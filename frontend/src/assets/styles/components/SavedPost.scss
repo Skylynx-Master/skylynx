@@ -1,0 +1,42 @@
+@import "../Vars.scss";
+
+.SavedPost {
+  width: 660px;
+  height: 540px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8% auto 0;
+  background-color: $color-white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.SavedPost h2 {
+  font-size: 35px;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+.SavedPost-check {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.SavedPost p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.SavedPost-clock {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.SavedPost a {
+  font-size: 20px;
+  text-decoration: underline;
+}

@@ -1,12 +1,14 @@
 import React from "react";
 import SearchAddress from '../components/SearchAddress';
-import AccountConfirmation from "../components/AccountConfirmation";
+import SavedPost from "../components/SavedPost";
+
 
 function Filters () {
   return (
     <div>
       {/* <SearchAddress /> */}
-      <AccountConfirmation />
+      <SavedPost />
+      
 
     </div>
     
