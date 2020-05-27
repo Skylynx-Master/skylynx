@@ -1,0 +1,53 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "PARK_ID": 960,
+        "FACILITYID": 28014,
+        "NAME": "Los Palmerales",
+        "NAME_FR": "Palma Bonita",
+        "ADDRESS": "Avenida de los parajes Palma Bonita Edificio C-102",
+        "FACILITY_T": "Departamento",
+        "MODIFIED_D": "2018/01/18",
+        "CREATED_DA": null,
+        "DESCRIPTION": "Hermoso Departamento ubicado cerca de tren suburbano",
+        "PICTURE_LI": null,
+        "PICTURE_DE": null,
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-99.1928209, 19.5636957]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "PARK_ID": 960,
+        "FACILITYID": 28014,
+        "NAME": "Las Arboledas",
+        "NAME_FR": "Valle Dorado",
+        "ADDRESS": "Circuito de la concorde #17 Lomas Boulevares",
+        "FACILITY_T": "Casa",
+        "MODIFIED_D": "2018/03/13",
+        "CREATED_DA": null,
+        "DESCRIPTION": "Casa Amplia ubicada en un hermoso fraccionamiento",
+        "PICTURE_LI": null,
+        "PICTURE_DE": null,
+        "PICTURE__1": null
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-99.211940, 19.570000]
+      }
+    }
+  ]
+}
