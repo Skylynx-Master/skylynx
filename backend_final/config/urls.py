@@ -9,6 +9,7 @@ from apartacho.addresses.views import AddressViewSet
 from apartacho.properties.views import PropertyViewSet
 from apartacho.cities.views import CitiesViewSet
 from apartacho.users.views import UserViewSet
+from apartacho.publications.views import PublicationViewSet
 
 
 router = DefaultRouter()
@@ -16,6 +17,7 @@ router.register('addresses', AddressViewSet, basename='address')
 router.register('countries', CountryViewSet, basename='country')
 router.register('cities', CitiesViewSet, basename='city')
 router.register('properties', PropertyViewSet, basename='property')
+router.register('publications', PublicationViewSet, basename='publication')
 router.register('users', UserViewSet, basename='user')
 
 urlpatterns = [

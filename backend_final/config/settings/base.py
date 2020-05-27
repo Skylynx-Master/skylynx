@@ -79,6 +79,7 @@ LOCAL_APPS = [
     "apartacho.cities.apps.CitiesConfig",
     "apartacho.countries.apps.CountriesConfig",
     "apartacho.properties.apps.PropertiesConfig",
+    "apartacho.publications.apps.PublicationsConfig",
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
