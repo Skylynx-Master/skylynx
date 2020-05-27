@@ -19,14 +19,14 @@ class Country(ApartachoModel):
         max_length=50
     )
 
-    iso_tres = models.CharField( #COL
+    iso_3 = models.CharField( #COL
         verbose_name="iso_tres",
         max_length=4,
         blank=True,
         null=True
     )
 
-    iso_dos = models.CharField( #CO
+    iso_2 = models.CharField( #CO
         verbose_name="iso_dos",
         max_length=3,
         blank=True,
@@ -38,6 +38,11 @@ class Country(ApartachoModel):
         max_length=3,
         blank=True,
         null=True
+    )
+
+    is_active = models.BooleanField(
+        verbose_name='active',
+        default=True
     )
 
     def __str__(self):

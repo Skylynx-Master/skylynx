@@ -38,6 +38,27 @@ class Address(ApartachoModel):
         max_length=50
     )
 
+    latitude = models.DecimalField(
+        verbose_name='latitude',
+        max_digits=22,
+        decimal_places=16,
+        blank=True,
+        null=True
+    )
+
+    longitude = models.DecimalField(
+        verbose_name='longitude',
+        max_digits=22,
+        decimal_places=16,
+        blank=True,
+        null=True
+    )
+
+    is_active = models.BooleanField(
+        verbose_name='active',
+        default=True
+    )
+
     city = models.ForeignKey(
         City,
         on_delete=models.SET_NULL,
