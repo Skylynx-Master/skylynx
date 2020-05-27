@@ -44,7 +44,6 @@ function Mapping() {
           </div>
         </InfoWindow>
       )}
-      ))}
     </GoogleMap>
   );
 }
