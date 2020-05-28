@@ -16,7 +16,8 @@
     "react-dom": "^16.13.1",
     "react-google-maps": "^9.4.5",
     "react-places-autocomplete": "^7.2.1",
-    "react-router-dom": "^5.2.0"
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.9.6",
