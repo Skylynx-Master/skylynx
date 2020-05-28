@@ -38,11 +38,3 @@ class Favorite(ApartachoModel):
         on_delete=models.CASCADE,
         help_text='Set relationship with user',
     )
-
-    def __str__(self):
-        """Return state favotite name."""
-        return self.is_favorite
-
-    def __str__(self):
-            """Return property name."""
-            return self.property
