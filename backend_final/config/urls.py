@@ -12,7 +12,6 @@ from apartacho.users.views import UserViewSet
 from apartacho.publications.views import PublicationViewSet
 from apartacho.favorites.views import FavoriteViewSet
 
-
 router = DefaultRouter()
 router.register('addresses', AddressViewSet, basename='address')
 router.register('countries', CountryViewSet, basename='country')
