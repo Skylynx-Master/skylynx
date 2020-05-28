@@ -5,7 +5,7 @@ function Services() {
   return (
     <section className="services">
       <div className="services__items">
-        <p className="services--title">Servicios:</p>
+        {/* <p className="services--title">Servicios:</p> */}
         <ol className="services--list">
           <li>
             <label>

@@ -25,7 +25,7 @@ $color-peach: #fdcb9e;
   border-radius: 20px;
   padding: 10px;
   margin: 10px;
-  border: 1px solid $color-green;
+  border: 2px solid $color-green;
   outline: none;
 }
 
@@ -34,3 +34,16 @@ $color-peach: #fdcb9e;
   align-items: center;
   justify-content: center;
 }
+
+
+@mixin select-general {
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid $color-green;
+  outline: none;
+}
+
+
+
