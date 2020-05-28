@@ -23,7 +23,7 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-  .Header-links li {
+  .Header-links {
     display: none;
   }
   .Header-links_profile {
@@ -31,7 +31,7 @@ body {
     width: 30px;
     height: 30px;
   }
-  .Header-icons {
+  .Header-icons img {
     display: none;
   }
   .Login-form {
