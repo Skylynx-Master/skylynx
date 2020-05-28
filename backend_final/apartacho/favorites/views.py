@@ -8,7 +8,7 @@ from rest_framework.mixins import (CreateModelMixin,
                                    UpdateModelMixin)
 
 # Serializers
-from apartacho.countries.serializers import FavoriteSerializer
+from apartacho.favorites.serializers import FavoriteSerializer
 
 # Models
 from apartacho.favorites.models import Favorite
