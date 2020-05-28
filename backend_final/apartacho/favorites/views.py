@@ -15,10 +15,10 @@ from apartacho.favorites.models import Favorite
 
 
 class FavoriteViewSet(GenericViewSet,
-                     CreateModelMixin,
-                     RetrieveModelMixin,
-                     UpdateModelMixin,
-                     ListModelMixin):
+                      CreateModelMixin,
+                      RetrieveModelMixin,
+                      UpdateModelMixin,
+                      ListModelMixin):
     """Favorite views."""
 
     queryset = Favorite.objects.filter(is_favorite=True)
