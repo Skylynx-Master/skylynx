@@ -1,5 +1,7 @@
 import React from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route, withRouter } from "react-router-dom";
+import { AuthProvider } from "./utils/AuthContext";
+import { MessageProvider } from "./utils/MessageContext";
 
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -16,14 +18,18 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/search" component={Search} />
-          <Route exact path="/detail" component={Detail} />
-          <Route exact path="/register" component={Register} />
-          <Route exact path="/login" component={Login} />
-          <Route exact path="/filters" component={Filters} />
-          <Route exact path="/dashboard" component={Dashboard} />
-          <Route component={NotFound} />
+          <AuthProvider>
+            <MessageProvider>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/search" component={Search} />
+              <Route exact path="/detail" component={Detail} />
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/login" component={Login} />
+              <Route exact path="/filters" component={Filters} />
+              <Route exact path="/dashboard" component={Dashboard} />
+              <Route component={NotFound} />
+            </MessageProvider>
+          </AuthProvider>
         </Switch>
       </Layout>
     </BrowserRouter>
