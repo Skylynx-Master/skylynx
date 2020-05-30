@@ -21,8 +21,6 @@ class ChoicesField(serializers.Field):
 class OfferSerializer(serializers.ModelSerializer):
     """Offers serializers."""
 
-    offer_type = ChoicesField(choices=Offer.OFFERS_TYPES)
-
     offer_description = serializers.CharField(max_length=120)
 
     class Meta:
