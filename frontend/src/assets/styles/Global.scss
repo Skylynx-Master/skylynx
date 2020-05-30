@@ -63,23 +63,33 @@ body {
 
   .MailConfirmation {
     width: 90vw;
-    height: 65vh;
+    height: 40vh;
   }
   .MailConfirmation h2 {
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  .MailConfirmation img {
+    width: 90px;
+    height: 90px;
   }
 
   .AccountConfirmation {
     width: 90vw;
-    height: 80vh;
+    height: 50vh;
   }
   .AccountConfirmation h2 {
-    font-size: 30px;
+    font-size: 20px;
+  }
+
+  .AccountConfirmation img {
+    width: 70px;
+    height: 70px;
   }
 
   .SavedPost {
     width: 90vw;
-    height: 80vh;
+    height: 60vh;
   }
   .SavedPost h2 {
     font-size: 20px;
@@ -95,6 +105,25 @@ body {
   }
 
   .SavedPost a {
+    font-size: 16px;
+  }
+
+  .PublishConfirmation {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .PublishConfirmation h2 {
+    font-size: 20px;
+  }
+
+  .PublishConfirmation img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 40px;
+  }
+
+  .PublishConfirmation a {
     font-size: 16px;
   }
 }
