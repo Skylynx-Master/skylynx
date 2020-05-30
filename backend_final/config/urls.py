@@ -12,6 +12,9 @@ from apartacho.users.views import UserViewSet
 from apartacho.publications.views import PublicationViewSet
 from apartacho.favorites.views import FavoriteViewSet
 from apartacho.offers.views import OfferViewSet
+from apartacho.trackings.views import TrackingViewSet
+
+
 
 
 router = DefaultRouter()
@@ -23,6 +26,8 @@ router.register('publications', PublicationViewSet, basename='publication')
 router.register('favorites', FavoriteViewSet, basename='favorite')
 router.register('users', UserViewSet, basename='user')
 router.register('offers', OfferViewSet, basename='offer')
+router.register('trackings', TrackingViewSet, basename='tracking')
+
 
 
 urlpatterns = [
