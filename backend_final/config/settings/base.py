@@ -71,6 +71,7 @@ THIRD_PARTY_APPS = [
     "allauth.socialaccount",
     "django_celery_beat",
     "django_filters",
+    "corsheaders",
 ]
 
 LOCAL_APPS = [
@@ -139,6 +140,8 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.common.BrokenLinkEmailsMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
 ]
 
 # STATIC
@@ -310,3 +313,12 @@ REST_FRAMEWORK = {
 }
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+CORS_ORIGIN_ALLOW_ALL = True  # If this is used then `CORS_ORIGIN_WHITELIST` will not have any effect
+CORS_ALLOW_CREDENTIALS = True
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3800',  # If this is used, then not need to use `CORS_ORIGIN_ALLOW_ALL = True`
+]
+CORS_ORIGIN_REGEX_WHITELIST = [
+    'http://localhost:3800',
+]

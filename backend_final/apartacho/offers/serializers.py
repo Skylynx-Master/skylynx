@@ -4,26 +4,21 @@
 from rest_framework import serializers
 
 # Models
-from apartacho.offers.models import Offer
-
-class ChoicesField(serializers.Field):
-    def __init__(self, choices, **kwargs):
-        self._choices = choices
-        super(ChoicesField, self).__init__(**kwargs)
-
-    def to_representation(self, obj):
-        return self._choices[obj]
-
-    def to_internal_value(self, data):
-        return getattr(self._choices, data)
+from apartacho.offers.models import Offer, OFFERS_TYPES
 
 
 class OfferSerializer(serializers.ModelSerializer):
     """Offers serializers."""
 
-    offer_type = ChoicesField(choices=Offer.OFFERS_TYPES)
+    offer_type = serializers.ChoiceField(
+        required=True,
+        choices=OFFERS_TYPES
+    )
 
-    offer_description = serializers.CharField(max_length=120)
+    offer_description = serializers.CharField(
+        required=True,
+        max_length=150,
+    )
 
     class Meta:
         model = Offer

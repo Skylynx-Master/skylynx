@@ -15,8 +15,6 @@ from apartacho.offers.views import OfferViewSet
 from apartacho.trackings.views import TrackingViewSet
 
 
-
-
 router = DefaultRouter()
 router.register('addresses', AddressViewSet, basename='address')
 router.register('countries', CountryViewSet, basename='country')
@@ -27,7 +25,6 @@ router.register('favorites', FavoriteViewSet, basename='favorite')
 router.register('users', UserViewSet, basename='user')
 router.register('offers', OfferViewSet, basename='offer')
 router.register('trackings', TrackingViewSet, basename='tracking')
-
 
 
 urlpatterns = [
