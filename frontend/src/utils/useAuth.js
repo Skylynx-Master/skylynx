@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import { useState } from "react";
 
-const apiUrl = "http://localhost:8000/api/v1";
+const apiUrl = "http://34.202.157.152:8000/api/v1";
 
 export function useAuth() {
   const [data, setData] = useState({});
@@ -27,7 +27,8 @@ export function useAuth() {
       });
       if (response.ok) {
         const result = await response.json();
-        setData(result.data);
+        console.log(result);
+        setData(result);
         setError("");
       } else {
         setError(response.statusText);
@@ -45,12 +46,12 @@ export function useAuth() {
       setError("");
       setData({});
       const headers = {
+        // prettier-ignore
+        'Accept': 'application/json',
         "Content-Type": "application/json",
-        Accept: "application/json",
       };
-      // const body = JSON.stringify(data);
+      const body = JSON.stringify(data);
       const response = await fetch(apiUrl + "/users/signup/", {
-        mode: "no-cors",
         method: "POST",
         headers,
         body,

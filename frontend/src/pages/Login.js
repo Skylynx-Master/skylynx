@@ -7,19 +7,20 @@ import { AuthContext } from "../utils/AuthContext";
 import { MessageContext } from "../utils/MessageContext";
 
 const Login = () => {
-  const { authenticated, error, handleLogin } = useContext(AuthContext);
+  const { authenticated, error, handleLogin, data } = useContext(AuthContext);
   const { register, handleSubmit, errors } = useForm();
   const { setMessage } = useContext(MessageContext);
   const history = useHistory();
 
-  const onSubmit = (data) => {
-    handleLogin(data);
+  const onSubmit = (res) => {
+    handleLogin(res);
   };
 
   useEffect(() => {
     setMessage("");
     if (authenticated) {
       setMessage("Login Success");
+      // history.push("/home");
     } else if (error !== "") {
       setMessage("Login Denied", error);
     }
@@ -58,4 +59,4 @@ const Login = () => {
   );
 };
 
-export default withRouter(Login);
+export default Login;

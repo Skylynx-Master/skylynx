@@ -27,7 +27,7 @@ function App() {
               <Route exact path="/login" component={Login} />
               <Route exact path="/filters" component={Filters} />
               <Route exact path="/dashboard" component={Dashboard} />
-              <Route component={NotFound} />
+              {/* <Route component={NotFound} /> */}
             </MessageProvider>
           </AuthProvider>
         </Switch>

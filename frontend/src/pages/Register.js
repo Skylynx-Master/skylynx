@@ -13,7 +13,7 @@ const Register = () => {
   const history = useHistory();
 
   const onSubmit = (data) => {
-    alert(JSON.stringify(data, null));
+    //history.push("/home");
     handleSignUp(data);
   };
 
