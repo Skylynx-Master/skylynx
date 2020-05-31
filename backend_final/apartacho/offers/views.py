@@ -15,10 +15,10 @@ from apartacho.offers.models import Offer
 
 
 class OfferViewSet(GenericViewSet,
-                         CreateModelMixin,
-                         RetrieveModelMixin,
-                         UpdateModelMixin,
-                         ListModelMixin):
+                   CreateModelMixin,
+                   RetrieveModelMixin,
+                   UpdateModelMixin,
+                   ListModelMixin):
     """Offers views."""
 
     queryset = Offer.objects.filter(is_active=True)

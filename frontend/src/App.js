@@ -13,6 +13,7 @@ import Search from "./pages/Search";
 import Detail from "./pages/Detail";
 import Dashboard from "./pages/Dashboard";
 import AllModals from "./pages/AllModals";
+import Create from "./pages/Create";
 
 function App() {
   return (
@@ -29,7 +30,7 @@ function App() {
               <Route exact path="/filters" component={Filters} />
               <Route exact path="/dashboard" component={Dashboard} />
               <Route exact path="/modals" component={AllModals} />
-
+              <Route exact path="/create-post" component={Create} />
               {/* <Route component={NotFound} /> */}
             </MessageProvider>
           </AuthProvider>

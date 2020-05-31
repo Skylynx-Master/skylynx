@@ -4,6 +4,17 @@ from django.db import models
 # Utilities
 from apartacho.utils.models import ApartachoModel
 from apartacho.users.models import User
+from apartacho.addresses.models import Address
+
+OFFERS_TYPES = [
+    (1, 'Alquiler-Arriendo'),
+    (2, 'Venta'),
+]
+
+SERVICE_TYPES = [
+    (1, 'Apartamento'),
+    (2, 'Casa'),
+]
 
 
 class Property(ApartachoModel):
@@ -51,7 +62,20 @@ class Property(ApartachoModel):
     door_count = models.PositiveSmallIntegerField(
         verbose_name='door count',
         default=0,
+        null=True,
         help_text='Set to door count for the real estate.',
+    )
+
+    offer_type = models.IntegerField(
+        choices=OFFERS_TYPES,
+        default=1,
+        help_text='It presents the types of offers for the property to be offered'
+    )
+
+    service_type = models.IntegerField(
+        choices=SERVICE_TYPES,
+        default=1,
+        help_text='It presents the types of property for the property to be offered'
     )
 
     has_heated = models.BooleanField(
@@ -99,6 +123,7 @@ class Property(ApartachoModel):
     property_condition = models.FloatField(
         verbose_name='construction year',
         default=5.0,
+        null=True,
         help_text='Set to construction year the real estate.',
     )
 
@@ -118,4 +143,11 @@ class Property(ApartachoModel):
         User,
         on_delete=models.CASCADE,
         help_text='Set relationship with user',
+    )
+
+    address = models.ForeignKey(
+        Address,
+        on_delete=models.CASCADE,
+        null=True,
+        help_text='Set relationship with address',
     )

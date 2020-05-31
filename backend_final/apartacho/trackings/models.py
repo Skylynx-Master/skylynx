@@ -1,4 +1,4 @@
-"""Trackings model."""
+"""Tracking model."""
 
 # Django
 from django.db import models
@@ -12,7 +12,7 @@ from apartacho.users.models import User
 
 
 class Tracking(ApartachoModel):
-    """Trackings model."""
+    """Tracking model."""
 
     property = models.ForeignKey(
         Property,

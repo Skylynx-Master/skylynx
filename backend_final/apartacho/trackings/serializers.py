@@ -1,4 +1,4 @@
-"""Trackings serializers."""
+"""Tracking serializers."""
 
 # Django REST Framework
 from rest_framework import serializers
@@ -8,7 +8,7 @@ from apartacho.trackings.models import Tracking
 
 
 class TrackingSerializer(serializers.ModelSerializer):
-    """Trackings serializers."""
+    """Tracking serializers."""
 
     class Meta:
         model = Tracking
