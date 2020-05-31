@@ -25,6 +25,19 @@ describe("Header Component Testing", () => {
     expect(header.find(".Header-logo").length).toEqual(1);
   });
 
+  test("Link title Search/Buscar", () => {
+    expect(header.find(".Header-icons_search").text()).toEqual("Buscar");
+  });
+  test("Link title Favorites/Favoritos", () => {
+    expect(header.find(".Header-icons_favorites").text()).toEqual("Favoritos");
+  });
+
+  test("Link title Create Post/Crear Publicacion", () => {
+    expect(header.find(".Header-icons_createpost").text()).toEqual(
+      "Crear Publicación"
+    );
+  });
+
   test("Header Icons and Links Render", () => {
     expect(header.find(".Header-icons").length).toEqual(8);
   });
