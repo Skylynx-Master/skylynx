@@ -40,13 +40,11 @@ class PropertyModelSerializer(serializers.ModelSerializer):
     )
 
     door_count = serializers.IntegerField(
-        required=True,
         min_value=0,
         max_value=2000,
     )
 
     construction_year = serializers.IntegerField(
-        required=True,
         max_value=now.year,
     )
 

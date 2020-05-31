@@ -25,6 +25,7 @@ class Property(ApartachoModel):
         verbose_name='price mt',
         max_digits=12,
         decimal_places=2,
+        null=True,
         help_text='Set to price for square meter the real estate.',
     )
 
@@ -91,6 +92,7 @@ class Property(ApartachoModel):
 
     construction_year = models.PositiveSmallIntegerField(
         verbose_name='construction year',
+        null=True,
         help_text='Set to construction year the real estate.',
     )
 

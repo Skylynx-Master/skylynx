@@ -14,10 +14,11 @@ class RootSpider(CrawlSpider):
     item_count = 0
     allowed_domains = ['www.fincaraiz.com.co']
     start_urls = [
-        'https://www.fincaraiz.com.co/apartamento-casa-apartaestudio/venta/bogota/?ad=30|1||||1||8,9,22|||67|3630001||||||||||||||||1|||1||griddate%20desc||||-1||'
+        'https://www.fincaraiz.com.co/apartamentos/arriendo/bogota/?ad=30|1||||2||8|||67|3630001||||||||||||||||1|||1||griddate%20desc||||-1||',
+        'https://www.fincaraiz.com.co/apartamentos/arriendo/bogota/?ad=30|2||||2||8|||67|3630001||||||||||||||||1|||1||griddate%20desc||||-1||',
+        'https://www.fincaraiz.com.co/apartamentos/arriendo/bogota/?ad=30|3||||2||8|||67|3630001||||||||||||||||1|||1||griddate%20desc||||-1||',
     ]
     rules = {
-        Rule(LinkExtractor(allow=(), restrict_xpaths='//*[@id="divPaginator"]/a[7]')),
         Rule(
             LinkExtractor(
                 allow=(),
@@ -50,6 +51,8 @@ class RootSpider(CrawlSpider):
         rl_item['overview'] = response.xpath('normalize-space(//div[@class="boxcube"]/p/text())').extract()
         rl_item['code_root'] = response.xpath('normalize-space(//h2[@class="description"]/span/b/text())').extract()
         self.item_count += 1
+
+        # Limit the add register
         if self.item_count > 10:
             raise CloseSpider('item_exceeded')
         yield rl_item

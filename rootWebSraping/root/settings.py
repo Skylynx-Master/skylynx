@@ -67,6 +67,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
     'root.pipelines.RootPipeline': 300,
+    'root.pipelines.RootPipelineOverview': 500,
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
