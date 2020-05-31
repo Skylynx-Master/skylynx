@@ -1,6 +1,7 @@
 import React from "react";
 import MailConfirmation from "../../components/MailConfirmation";
 import { mount } from "enzyme";
+import { create } from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 
 describe("MailConfirmation Component Testing", () => {
@@ -24,5 +25,16 @@ describe("MailConfirmation Component Testing", () => {
 
   test("Mail Confirmation image render", () => {
     expect(mail.find(".MailConfirmation-image").length).toEqual(1);
+  });
+});
+
+describe("MailConfirmation Snapshot", () => {
+  test("Test UI MailConfirmation component", () => {
+    const snapmail = create(
+      <BrowserRouter>
+        <MailConfirmation />
+      </BrowserRouter>
+    );
+    expect(snapmail.toJSON()).toMatchSnapshot();
   });
 });

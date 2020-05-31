@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../../components/Header";
 import { mount } from "enzyme";
+import { create } from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 import HamburgerMenu from "../../components/HamburgerMenu";
 
@@ -44,5 +45,16 @@ describe("Header Component Testing", () => {
 
   test("Hamburger Menu Availability", () => {
     expect(hamburgerMenu.length).toEqual(1);
+  });
+});
+
+describe("Header Snapshot", () => {
+  test("Test UI Header component", () => {
+    const snapheader = create(
+      <BrowserRouter>
+        <Header />
+      </BrowserRouter>
+    );
+    expect(snapheader.toJSON()).toMatchSnapshot();
   });
 });

@@ -1,6 +1,7 @@
 import React from "react";
 import AccountConfirmation from "../../components/AccountConfirmation";
 import { mount } from "enzyme";
+import { create } from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 
 describe("AccountConfirmation Component Testing", () => {
@@ -35,5 +36,16 @@ describe("AccountConfirmation Component Testing", () => {
     expect(confirmation.find(".AccountConfirmation-button").text()).toEqual(
       "Iniciar Sesión"
     );
+  });
+});
+
+describe("AccountConfirmation Snapshot", () => {
+  test("Test UI AccountConfirmation component", () => {
+    const accountsnap = create(
+      <BrowserRouter>
+        <AccountConfirmation />
+      </BrowserRouter>
+    );
+    expect(accountsnap.toJSON()).toMatchSnapshot();
   });
 });
