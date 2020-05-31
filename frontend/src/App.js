@@ -12,6 +12,7 @@ import NotFound from "./pages/NotFound";
 import Search from "./pages/Search";
 import Detail from "./pages/Detail";
 import Dashboard from "./pages/Dashboard";
+import AllModals from "./pages/AllModals";
 
 function App() {
   return (
@@ -27,6 +28,8 @@ function App() {
               <Route exact path="/login" component={Login} />
               <Route exact path="/filters" component={Filters} />
               <Route exact path="/dashboard" component={Dashboard} />
+              <Route exact path="/modals" component={AllModals} />
+
               {/* <Route component={NotFound} /> */}
             </MessageProvider>
           </AuthProvider>
