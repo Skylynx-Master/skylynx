@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import SearchAddress from "../components/SearchAddress";
-import "../assets/styles/components/services.scss";
+
 import "../assets/styles/components/Filters.scss";
 
 function Filters() {
   return (
     <section className="filters">
       <div className="filters__ubication">
-        <h1>Ubicación </h1>
+        <h1>Crear Publicación </h1>
         {/* <input
           type="text"
           className="search--ubication"
@@ -142,7 +142,7 @@ function Filters() {
 
       <div className="filters__search">
         <button type="button" className="button--filter">
-          Filtar
+          Guardar
         </button>
       </div>
       {/* <SearchAddress /> */}

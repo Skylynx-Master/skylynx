@@ -12,24 +12,22 @@ import NotFound from "./pages/NotFound";
 import Search from "./pages/Search";
 import Detail from "./pages/Detail";
 import Dashboard from "./pages/Dashboard";
+import Create from "./pages/Create";
 
 function App() {
   return (
     <BrowserRouter>
       <Layout>
         <Switch>
-          <AuthProvider>
-            <MessageProvider>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/search" component={Search} />
-              <Route exact path="/detail" component={Detail} />
-              <Route exact path="/register" component={Register} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/filters" component={Filters} />
-              <Route exact path="/dashboard" component={Dashboard} />
-              {/* <Route component={NotFound} /> */}
-            </MessageProvider>
-          </AuthProvider>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/search" component={Search} />
+          <Route exact path="/detail" component={Detail} />
+          <Route exact path="/register" component={Register} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/filters" component={Filters} />
+          <Route exact path="/dashboard" component={Dashboard} />
+          <Route exact path="/create-post" component={Create} />
+          {/* <Route component={NotFound} /> */}
         </Switch>
       </Layout>
     </BrowserRouter>

@@ -27,10 +27,10 @@ const Header = () => {
             <img src={FavoritesIcon} alt="favorites icon"></img>
             <li>Favoritos</li>
           </a>
-          <a className="Header-icons">
+          <Link to="/create-post" className="Header-icons">
             <img src={CreatePost} alt="create post icon"></img>
             <li>Crear Publicación</li>
-          </a>
+          </Link>
           <Link to="/" className="Header-icons">
             <img src={HomeIcon} alt="home icon"></img>
             <li>Inicio</li>
