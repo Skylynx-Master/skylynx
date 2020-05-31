@@ -23,5 +23,5 @@ class ImagesViewSet(GenericViewSet,
                     DestroyModelMixin):
     """Images views."""
 
-    queryset = Image.objects.filter(is_active=True)
+    queryset = Image.objects.all()
     serializer_class = ImagesSerializer
