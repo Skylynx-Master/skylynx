@@ -1,9 +1,18 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import PropertyList from '../components/PropertyList'
+import Map from '../components/Map'
+import '../assets/styles/pages/search.scss'
 
 const Search = () => {
   return (
-    <PropertyList />
+    <div className='search'>
+      <div className='search__list'>
+        <PropertyList />
+      </div>
+      <div className='search__map'>
+        <Map />
+      </div>
+    </div>
   );
 };
 

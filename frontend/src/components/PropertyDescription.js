@@ -2,14 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../assets/styles/components/PropertyDescription.scss';
 
-const PropertyDescription = () => {
+const PropertyDescription = ({city, sector, type, category, description}) => {
   return (
-    <Link to='#'>
       <div className='description'>
-        <h2 className='description__title'>Casa en Arriendo, TEUSAQUILLO Bogotá D.C.</h2>
-        <p className='description__subtitle'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <h2 className='description__title'>{type} en {category}, {sector} {city}</h2>
+        <p className='description__subtitle'>{description}</p>
       </div>
-    </Link>
   )
 };
 

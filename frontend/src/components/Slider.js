@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import '../assets/styles/components/Slider.scss';
-import i1 from '../assets/static/test/img1.jpg';
-import i2 from '../assets/static/test/img2.jpg';
-import i3 from '../assets/static/test/img3.jpg';
-import i4 from '../assets/static/test/img4.jpg';
-import i5 from '../assets/static/test/img5.jpg';
 
-const Slider = () => {
-  let sliderArrow = [
-    <img src={i1} className='container__img'></img>,
-    <img src={i2} className='container__img'></img>,
-    <img src={i3} className='container__img'></img>,
-    <img src={i4} className='container__img'></img>,
-    <img src={i5} className='container__img'></img>
-  ];
+const DEFAULT_ARRAY = [
+  "https://saposyprincesas.elmundo.es/wp-content/uploads/2016/07/versalles1.jpg",
+  "https://www.eluniversal.com.mx/sites/default/files/styles/f01-1023x630/public/2017/02/10/1destinos_palacio_versalles2.jpg"
+]
+
+const Slider = ({photos = DEFAULT_ARRAY}) => {
+  let sliderArrow = [];
+
+  photos.map((photo, index) => (
+    sliderArrow.push(<img key={index} src={photo} className='container__img' alt='apartment photo'></img>)
+  ))
+
   const [x, setX] = useState(0);
   const handleLeft = () => {
     x === 0 
