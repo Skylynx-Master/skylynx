@@ -21,16 +21,17 @@ const Header = () => {
         <ul className="Header-links">
           <Link to="/filters" className="Header-icons">
             <img src={SearchIcon} alt="search icon"></img>
-            <li>Buscar</li>
+            <li className="Header-icons_search">Buscar</li>
           </Link>
           <a className="Header-icons">
             <img src={FavoritesIcon} alt="favorites icon"></img>
-            <li>Favoritos</li>
+            <li className="Header-icons_favorites">Favoritos</li>
           </a>
           <Link to="/create-post" className="Header-icons">
             <img src={CreatePost} alt="create post icon"></img>
-            <li>Crear Publicación</li>
+            <li className="Header-icons_createpost">Crear Publicación</li>
           </Link>
+
           <Link to="/" className="Header-icons">
             <img src={HomeIcon} alt="home icon"></img>
             <li>Inicio</li>
