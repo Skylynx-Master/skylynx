@@ -1,15 +1,24 @@
 import React from "react";
-import { mount } from "enzyme";
 import Header from "../../components/Header";
+import { mount } from "enzyme";
+import { BrowserRouter } from "react-router-dom";
 
-describe("<Header />", () => {
-  const header = mount(<Header />);
+describe("Header Component Testing", () => {
+  const header = mount(
+    <BrowserRouter>
+      <Header />
+    </BrowserRouter>
+  );
 
-  test("Header render", () => {
+  test("Header Render", () => {
     expect(header.length).toEqual(1);
   });
 
-  test("Header title", () => {
-    expect(header.find(".Header-title").length).toEqual(1);
+  test("Header Logo", () => {
+    expect(header.find(".Header-logo").length).toEqual(1);
+  });
+
+  test("Header Icons", () => {
+    expect(header.find(".Header-icons").length).toEqual(8);
   });
 });
