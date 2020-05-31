@@ -14,7 +14,7 @@ describe("AccountConfirmation Component Testing", () => {
     expect(confirmation.length).toEqual(1);
   });
 
-  test("Account Confirmation title render", () => {
+  test("Account Confirmation title Render", () => {
     expect(confirmation.find(".AccountConfirmation-title").length).toEqual(1);
   });
 
