@@ -48,6 +48,8 @@ exports[`Header Snapshot Test UI Header component 1`] = `
       </a>
       <a
         className="Header-icons"
+        href="/create-post"
+        onClick={[Function]}
       >
         <img
           alt="create post icon"

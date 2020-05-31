@@ -40,7 +40,7 @@ describe("Header Component Testing", () => {
   });
 
   test("Header Icons and Links Render", () => {
-    expect(header.find(".Header-icons").length).toEqual(8);
+    expect(header.find(".Header-icons").length).toEqual(10);
   });
 
   test("Hamburger Menu Availability", () => {
