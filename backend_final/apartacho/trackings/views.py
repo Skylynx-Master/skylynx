@@ -1,4 +1,4 @@
-"""Cities views."""
+"""Tracking views."""
 
 # Django REST Framework
 from rest_framework.viewsets import GenericViewSet
@@ -15,11 +15,11 @@ from apartacho.trackings.models import Tracking
 
 
 class TrackingViewSet(GenericViewSet,
-                    CreateModelMixin,
-                    RetrieveModelMixin,
-                    UpdateModelMixin,
-                    ListModelMixin):
-    """Cities views."""
+                      CreateModelMixin,
+                      RetrieveModelMixin,
+                      UpdateModelMixin,
+                      ListModelMixin):
+    """Tracking views."""
 
     queryset = Tracking.objects.filter(is_active=True)
     serializer_class = TrackingSerializer

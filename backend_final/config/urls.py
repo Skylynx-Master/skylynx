@@ -13,6 +13,7 @@ from apartacho.publications.views import PublicationViewSet
 from apartacho.favorites.views import FavoriteViewSet
 from apartacho.offers.views import OfferViewSet
 from apartacho.trackings.views import TrackingViewSet
+from apartacho.images.views import ImagesViewSet
 
 
 router = DefaultRouter()
@@ -25,7 +26,7 @@ router.register('favorites', FavoriteViewSet, basename='favorite')
 router.register('users', UserViewSet, basename='user')
 router.register('offers', OfferViewSet, basename='offer')
 router.register('trackings', TrackingViewSet, basename='tracking')
-
+router.register('images', ImagesViewSet, basename='image')
 
 urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}

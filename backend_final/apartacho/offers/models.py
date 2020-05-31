@@ -13,26 +13,17 @@ from apartacho.publications.models import Publication
 from apartacho.users.models import User
 
 OFFERS_TYPES = [
-    ('Venta', 'Venta'),
-    ('Alquiler-Arriendo', 'Alquiler-Arriendo'),
-    ('Ninguna', 'Ninguna'),
+    (1, 'Alquiler-Arriendo'),
+    (2, 'Venta'),
 ]
 
 
 class Offer(ApartachoModel):
     """Offers model."""
 
-    OFFERS_TYPES = [
-        (1, 'Ninguna'),
-        (2, 'Alquiler-Arriendo'),
-        (3,'Venta'),
-    ]
-
     offer_type = models.IntegerField(
-        blank=False,
-        null=False,
         choices=OFFERS_TYPES,
-        default=3,
+        default=2,
         help_text='It presents the types of offers for the property to be offered'
     )
 
