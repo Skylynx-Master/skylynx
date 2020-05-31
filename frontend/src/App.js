@@ -9,6 +9,7 @@ import Filters from "./pages/Filters";
 import NotFound from "./pages/NotFound";
 import Search from "./pages/Search";
 import Detail from "./pages/Detail";
+import Create from "./pages/Create";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           <Route exact path="/register" component={Register} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/filters" component={Filters} />
-          <Route component={NotFound} />
+          <Route exact path="/create-post" component={Create} />
+          {/* <Route component={NotFound} /> */}
         </Switch>
       </Layout>
     </BrowserRouter>

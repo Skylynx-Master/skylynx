@@ -19,12 +19,10 @@
     display: block;
     margin: 10px auto;
   }
-  & p {
-    padding: 20px 0;
-    text-align: center;
-  }
+
   & label {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 
   &__ubication {
@@ -85,4 +83,9 @@
 }
 .title__services {
   margin-bottom: 30px;
+}
+
+.filters__ubication p {
+  padding: 20px 0;
+  text-align: center;
 }

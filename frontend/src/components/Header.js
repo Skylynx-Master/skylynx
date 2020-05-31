@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../assets/styles/components/Header.scss";
-import ApartachoLogo from '../assets/static/ApartachoLogo.png';
+import ApartachoLogo from "../assets/static/ApartachoLogo.png";
 import accountIcon from "../assets/static/accountIcon.png";
 import SearchIcon from "../assets/static/SearchIcon.png";
 import FavoritesIcon from "../assets/static/FavoritesIcon.png";
@@ -12,11 +12,15 @@ const Header = () => {
   return (
     <header className="Header">
       <Link to="/">
-        <img className="Header-logo" src={ApartachoLogo} alt="Logo LaHause"></img>
+        <img
+          className="Header-logo"
+          src={ApartachoLogo}
+          alt="Logo LaHause"
+        ></img>
       </Link>
       <nav>
         <ul className="Header-links">
-          <Link to="/filters" className="Header-icons" >
+          <Link to="/filters" className="Header-icons">
             <img src={SearchIcon} alt="search icon"></img>
             <li>Buscar</li>
           </Link>
@@ -24,12 +28,12 @@ const Header = () => {
             <img src={FavoritesIcon} alt="favorites icon"></img>
             <li>Favoritos</li>
           </a>
-          <a className="Header-icons">
-            <img src={CreatePost} alt="create post icon" ></img>
+          <Link to="/create-post" className="Header-icons">
+            <img src={CreatePost} alt="create post icon"></img>
             <li>Crear Publicación</li>
-          </a>
+          </Link>
           <Link to="/" className="Header-icons">
-            <img src={HomeIcon} alt="home icon" ></img>
+            <img src={HomeIcon} alt="home icon"></img>
             <li>Inicio</li>
           </Link>
           <img
