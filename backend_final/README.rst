@@ -39,6 +39,10 @@ Setting Docker
 
     $ docker-compose -f local.yml down
 
+* Remove volume BD in docker, use this command::
+
+    $ docker volume rm backend_final_local_postgres_data
+
 Setting django
 ^^^^^^^^^^^^^^
 * Build migrations, use this command::
