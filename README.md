@@ -4,6 +4,8 @@
 
 
 ### Table of Contents
+* [Web mockup design](https://www.figma.com/file/sTOixAq0UGq2JX4zKzhHwk/Wireframes-Apartacho?node-id=0%3A1)
+* [Mobile mockup design](https://www.figma.com/file/sTOixAq0UGq2JX4zKzhHwk/Wireframes-Apartacho?node-id=629%3A473)
 * [Description DataBase design](./ReadmeDB.md)
 * [Frontend style guides](./frontend/README.md)
 * [Installation](./backend_final/README.rst)
