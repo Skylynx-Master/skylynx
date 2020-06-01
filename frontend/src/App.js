@@ -24,7 +24,7 @@ function App() {
             <MessageProvider>
               <Route exact path="/" component={Home} />
               <Route exact path="/search" component={Search} />
-              <Route exact path="/detail" component={Detail} />
+              <Route exact path="/detail/:Id" component={Detail} />
               <Route exact path="/register" component={Register} />
               <Route exact path="/login" component={Login} />
               <Route exact path="/filters" component={Filters} />

@@ -1,23 +1,37 @@
 a {
   text-decoration: none;
   color: #3f3f44;
+  margin-top: 25px;
 }
 
 .description {
+  color: #3f3f44;
   &__title {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 400;
   }
   &__subtitle {
-    font-size: 15px;
+    font-size: 20px;
     margin: 2% 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .description {
+    &__subtitle {
+      margin: 0px;
+    }
   }
 }
 
 @media screen and (max-width: 480px) {
   .description {
+    &__title {
+      font-size: 23px;
+      font-weight: 400;
+    }
     &__subtitle {
-      font-size: 1em;
+      font-size: 16px;
     }
   }
 }

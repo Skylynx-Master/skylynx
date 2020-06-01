@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Map Snapshot Test UI Map component 1`] = `
+<div
+  className="Map"
+>
+  <div
+    style={
+      Object {
+        "height": "0%",
+      }
+    }
+  />
+</div>
+`;
