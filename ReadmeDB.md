@@ -33,7 +33,7 @@ Images|Entity to manage visual content such as photos and / or videos of real es
 
 #### Step 2 - Relations between entities
 
-Entities | Users | Properties | Countries | Cities | Addresses | offers | Publications | tracings | favorites | images
+Entities | Users | Properties | Countries | Cities | Addresses | offers | Publications | trackings | favorites | images
 ---------|-------|------------|-----------|--------|-----------|--------|--------------|----------|-----------|-------
 Users | X | 0-M | 1-M | 1-M | 1-M | 0-M | X | 0-M | M-M | X
 Properties | 0-M | X | 1-M | 1-M | 1-M | 1-M | X | 1-M | 0-M | M-M
@@ -42,7 +42,7 @@ Cities | 1-M | 1-M | 1-1 | X | 1-M | X | X | X | X | X
 Addresses | 1-M | 1-M | M-M | 1-M | X | X | X | X | X | X
 offers | 0-M | 1-M | X | X | X | X | X | M-M | X | X
 Publications | 0-M | X | X | X | X | X | X | M-M | X | X
-tracings | 0-M | 1-M | X | X | X | M-M | M-M | X | X | X
+trackings | 0-M | 1-M | X | X | X | M-M | M-M | X | X | X
 favorites | M-M | 0-M | X | X | X | X | X | X | X | X
 images | X | M-M | X | X | X | X | X | X | X | X
 
