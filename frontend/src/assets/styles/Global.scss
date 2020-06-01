@@ -126,4 +126,22 @@ body {
   .PublishConfirmation a {
     font-size: 16px;
   }
+
+  .filters__info {
+    display: block;
+  }
+
+  .SearchAddress input {
+    max-width: 100%;
+  }
+  .filters__info--contain {
+    display: block;
+    margin: 35px;
+  }
+  .filters__services {
+    padding: 60px 0;
+  }
+  .filters__services--contain {
+    display: block;
+  }
 }

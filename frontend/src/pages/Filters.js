@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import SearchAddress from "../components/SearchAddress";
 import "../assets/styles/components/services.scss";
 import "../assets/styles/components/Filters.scss";
@@ -142,10 +143,9 @@ function Filters() {
 
       <div className="filters__search">
         <button type="button" className="button--filter">
-          Filtar
+          <Link to="/search">Filtar</Link>
         </button>
       </div>
-      {/* <SearchAddress /> */}
     </section>
   );
 }
