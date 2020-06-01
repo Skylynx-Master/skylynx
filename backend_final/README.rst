@@ -1,7 +1,4 @@
-
-:target: ../README.md
-     :alt: Back apartacho project readme
-     
+   
 .. image:: ../frontend/src/assets/static/ApartachoLogo.png
 
 The apartacho is best real estate online
