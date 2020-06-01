@@ -46,7 +46,7 @@ const HamburgerMenu = () => {
 
   return (
     <>
-      <IconBurger open={open} onClick={() => setOpen(!open)}>
+      <IconBurger className="IconBurger"open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />
