@@ -6,7 +6,7 @@
 ### Table of Contents
 * [Description DataBase design](./ReadmeDB.md)
 * [Frontend style guides](./frontend/README.md)
-* [Installation](./backend_final/README.md)
+* [Installation](./backend_final/README.rst)
 * [Credits](#user's-guide)
 * [User manual for administrators](#credits)
 ### Description
