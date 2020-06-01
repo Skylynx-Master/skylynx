@@ -1,4 +1,6 @@
-:house:partacho
+[Back apartacho project readme ](../README.md)
+
+![Apartacho](../frontend/src/assets/static/ApartachoLogo.png)
 =========
 
 The apartacho is best real estate online
@@ -137,6 +139,5 @@ Docker
 See detailed `cookiecutter-django Docker documentation`_.
 
 .. _`cookiecutter-django Docker documentation`: http://cookiecutter-django.readthedocs.io/en/latest/deployment-with-docker.html
-
 
 

@@ -49,8 +49,10 @@ images | X | M-M | X | X | X | X | X | X | X | X
 
 #### Step 3 - Attributes of entities
 
-offers_offer |  |  |
--------|--|--|-
+offers_offer
+
+name | type | key | 
+-----|------|-----|
 id |  integer | pk
 offer_type | integer | 
 offer_description | varchar(150) | 
@@ -61,8 +63,10 @@ user_id | integer | fk
 created | timestamp | 
 modified | timestamp | 
 		
-favorites |  |  |
--------|--|--|-
+favorites
+
+name | type | key | 
+-----|------|-----|
 id | integer | pk
 created | timestamp | 
 modified | timestamp | 
@@ -71,8 +75,10 @@ is_published_id | integer | fk
 property_id | integer | fk
 user_id | integer | fk
 		
-publications |  |  |
--------|--|--|-
+publications
+
+name | type | key | 
+-----|------|-----|
 id | integer | pk
 created | timestamp | 
 modified | timestamp | 
@@ -82,16 +88,20 @@ description | varchar(150) |
 property_id | integer | fk
 user_admin_id | integer | fk
 		
-images |  |  |
--------|--|--|-
+images 
+
+name | type | key | 
+-----|------|-----|
 id | integer | pk
 property_id | integer | fk
 created | timestamp | 
 modified | timestamp | 
 url | varchar(100) | 
 
-trackings |  |  |
--------|--|--|-
+trackings
+
+name | type | key | 
+-----|------|-----|
 id | integer | pk
 property_id | integer | fk
 user_id | integer | fk
@@ -99,8 +109,10 @@ created | timestamp |
 modified | timestamp | 
 is_active | boolean | 
 
-properties |  |  |
--------|--|--|-
+properties
+
+name | type | key | 
+-----|------|-----|
 id | integer | pk
 address_id | integer | fk
 user_id | integer | fk
@@ -126,8 +138,10 @@ overview | varchar(1000) |
 is_active | boolean | 
 service_type | integer | 
 		
-addresses |  |  |
--------|--|--|-
+addresses
+
+name | type | key |
+-----|------|-----|
 id | integer | pk
 city_id | integer | fk
 created | timestamp | 
@@ -141,8 +155,10 @@ latitude | numeric(12,9) |
 longitude | numeric(12,9) | 
 is_active | boolean | 
 
-cities |  |  | 
--------|--|--|-
+cities 
+
+name | type | key | 
+-----|------|-----|
 id | integer | pk
 country_id | integer | fk
 created | timestamp | 
@@ -152,8 +168,10 @@ latitude | numeric(12,9) |
 longitude | numeric(12,9) | 
 is_active | boolean | 
 
-countries |  |  | 
--------|--|--|-
+countries
+
+name | type | key | 
+-----|------|-----|
 id | integer | pk
 created | timestamp | 
 modified | timestamp | 
@@ -163,8 +181,10 @@ iso_2 | varchar(2) |
 phone_code | varchar(3) | 
 is_active | boolean | 
 
-users  |  |  | 
--------|--|--|-
+users
+
+name | type | key | 
+-----|------|-----|
 id | integer | pk
 city_id | integer | fk
 country_id | integer | fk
