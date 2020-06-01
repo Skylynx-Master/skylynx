@@ -1,16 +1,17 @@
 ## Apartacho project
-# :house:partacho
+
+![Apartacho](./frontend/src/assets/static/ApartachoLogo.png)
 
 
 ### Table of Contents
 * [Description DataBase design](./ReadmeDB.md)
 * [Frontend style guides](./frontend/README.md)
-* [Installation](#installation)
+* [Installation](./backend_final/README.md)
 * [Credits](#user's-guide)
 * [User manual for administrators](#credits)
 ### Description
 
-> Web platform that laHause offer the public all properties that are available on the modalities for lease or sale, so that users can see all the features and choose the place that suits you according to your search parameters.   
+> Web platform that laHause offer the public all properties that are available on the modalities for lease or sale, so that users can see all the features and choose the place that suits you according to your search parameters.
 
 ### Credits
 <img src="https://avatars2.githubusercontent.com/u/23039939?s=400&u=ad13cafbbea261f819bb6a8b84dbe915dd80f2ba&v=4" width="25" height="25"> [Iván D. Chipatecua](https://github.com/ivchip)
