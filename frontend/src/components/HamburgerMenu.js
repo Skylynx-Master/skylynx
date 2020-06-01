@@ -46,12 +46,12 @@ const HamburgerMenu = () => {
 
   return (
     <>
-      <IconBurger open={open} onClick={() => setOpen(!open)}>
+      <IconBurger className="IconBurger"open={open} onClick={() => setOpen(!open)}>
         <div />
         <div />
         <div />
       </IconBurger>
-      <MiniNav open={open} />
+      <MiniNav classname="MiniNav"open={open} />
     </>
   );
 };

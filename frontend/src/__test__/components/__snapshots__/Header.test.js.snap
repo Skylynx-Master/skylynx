@@ -76,7 +76,7 @@ exports[`Header Snapshot Test UI Header component 1`] = `
       </a>
     </ul>
     <div
-      className="sc-AxirZ gfqYih"
+      className="sc-AxirZ gfqYih IconBurger"
       onClick={[Function]}
       open={false}
     >
