@@ -9,11 +9,11 @@ const SavedPost = () => {
   return (
     <div className="SavedPost">
 
-      <h2>Se ha guardado su publicación</h2>
+      <h2 className="SavedPost-title">Se ha guardado su publicación</h2>
       <img src={checkIcon} alt="" className="SavedPost-check"></img>
-      <p>Espere a que uno de nuestros asesores revise y publique su inmueble.</p>
+      <p className="Savedpost-instructions">Espere a que uno de nuestros asesores revise y publique su inmueble.</p>
       <img src={clockIcon} alt="clock icon" className="SavedPost-clock"></img>
-      <Link to="/dashboard">Regresar a mi tablero</Link>
+      <Link to="/dashboard" className="SavedPost-route">Regresar a mi tablero</Link>
     </div>
   )
 }
