@@ -1,0 +1,77 @@
+.detail {
+  width: 100vw;
+  padding: 5% 15% 2% 15%;
+  display: block;
+  text-align: center;
+  color: #3f3f44;
+  &__container {
+    width: 100%; 
+    } 
+  &__presentation {
+    // padding: 60px 60px 0px;
+    &--slider {
+      margin-bottom: 30px;
+      height: auto;
+    }
+  }
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 10% 40px 10%;
+    & h3 {
+      text-align: left;
+      font-weight: 400;
+      font-size: 1.2em;
+      margin: 15px 0;
+    }
+    &--items {
+      margin: 20px 0;
+      text-align: left;
+    }
+    &--characteristics p {
+      text-align: left;
+      margin-left: 25px;
+    }
+    &--items p {
+      text-align: left;
+      margin: 10px 0;
+    }
+    &--services ul {
+      text-align: left;
+      margin-left: 18px;
+      & li {
+        margin: 8px 0;
+      }
+    }
+  }
+  & map {
+    border: 1px solid red;
+  }
+  &__fav i {
+    color: #47cfac;
+    border: 0;
+    font-size: 35px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .detail {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .detail {
+    &__presentation {
+      padding: 10px;
+      &--slider {
+        margin-bottom: 30px;
+        height: auto;
+      }
+    }
+  }
+}
+
+

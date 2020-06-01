@@ -1,0 +1,49 @@
+// Palette
+$color-white: #f7f7f7;
+$color-green: #47cfac;
+$color-typography: #3f3f44;
+$color-peach: #fdcb9e;
+
+//Mixins
+
+@mixin button-action {
+  width: 230px;
+  padding: 10px;
+  color: $color-typography;
+  background-color: $color-peach;
+  border-radius: 20px;
+  font-size: 30px;
+  margin: 20px 0;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin input-info {
+  width: 300px;
+  height: 52px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid $color-green;
+  outline: none;
+}
+
+@mixin center-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@mixin select-general {
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid $color-green;
+  outline: none;
+}
+
+
+

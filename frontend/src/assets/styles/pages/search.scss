@@ -1,0 +1,21 @@
+.search {
+  display: flex;
+  justify-content: flex-start;
+  &__list{
+    width: 60%;
+  }
+  &__map{
+    height: 65vw;
+    position: fixed;
+    width: 40%;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .search {
+    &__map {
+      display: none;
+    }
+  }
+}

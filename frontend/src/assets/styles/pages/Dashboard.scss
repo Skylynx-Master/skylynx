@@ -1,0 +1,35 @@
+.dashboard {
+    display: grid;
+    grid-template-columns: 222px 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "actions publish publish publish" "actions publish-pendding publish-pendding publish-pendding" "actions none none none";
+}
+.actions { grid-area: actions; }
+
+.publish { grid-area: publish; }
+
+.publish__pendding { grid-area: publish-pendding; }
+
+.publish__none { grid-area: none; }
+
+.dash__add{
+    font-size: 1em;
+    margin-top: 55.5px;
+    margin-left: 7px;
+    width: 187.5px;
+    height: 38px;
+    border-radius: 10px;
+    background-color: #fdcb9e;
+}
+
+.publish__title{
+    margin-top: 22px;
+    font-size: 1.5em;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+  }

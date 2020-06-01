@@ -1,0 +1,126 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Snapshot Test UI Header component 1`] = `
+<header
+  className="Header"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="Logo LaHause"
+      className="Header-logo"
+      src=""
+    />
+  </a>
+  <nav>
+    <ul
+      className="Header-links"
+    >
+      <a
+        className="Header-icons"
+        href="/filters"
+        onClick={[Function]}
+      >
+        <img
+          alt="search icon"
+          src=""
+        />
+        <li
+          className="Header-icons_search"
+        >
+          Buscar
+        </li>
+      </a>
+      <a
+        className="Header-icons"
+      >
+        <img
+          alt="favorites icon"
+          src=""
+        />
+        <li
+          className="Header-icons_favorites"
+        >
+          Favoritos
+        </li>
+      </a>
+      <a
+        className="Header-icons"
+        href="/create-post"
+        onClick={[Function]}
+      >
+        <img
+          alt="create post icon"
+          src=""
+        />
+        <li
+          className="Header-icons_createpost"
+        >
+          Crear Publicación
+        </li>
+      </a>
+      <a
+        className="Header-icons"
+        href="/"
+        onClick={[Function]}
+      >
+        <img
+          alt="home icon"
+          src=""
+        />
+        <li>
+          Inicio
+        </li>
+      </a>
+    </ul>
+    <div
+      className="sc-AxirZ gfqYih IconBurger"
+      onClick={[Function]}
+      open={false}
+    >
+      <div />
+      <div />
+      <div />
+    </div>
+    <ul
+      className="sc-AxjAm buYwmk MiniNav-links"
+      open={false}
+    >
+      <a
+        href="/filters"
+        onClick={[Function]}
+      >
+        <li>
+          Buscar
+        </li>
+      </a>
+      <a
+        href="/dashboard"
+        onClick={[Function]}
+      >
+        <li>
+          Favoritos
+        </li>
+      </a>
+      <a
+        href="/create-post"
+        onClick={[Function]}
+      >
+        <li>
+          Crear Publicación
+        </li>
+      </a>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <li>
+          Inicio
+        </li>
+      </a>
+    </ul>
+  </nav>
+</header>
+`;

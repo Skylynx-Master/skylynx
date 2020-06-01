@@ -1,0 +1,11 @@
+@import "../Vars.scss";
+
+.home {
+  display: grid;
+  // margin-top: 10px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "landing";
+  height: 100vh;
+  overflow-y: hidden;
+}

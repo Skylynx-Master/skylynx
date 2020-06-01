@@ -1,0 +1,79 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "type": "Casa",
+      "category": "arriendo",
+      "city": "Bogotá D.C",
+      "sector": "Teusaquillo",
+      "description": "Hermosa propiedad ubicada cerca a muy buenos colegio y hospitales, de facil acceso a trasporte y con todos los servicios publicos a su dispociocion",
+      "value": "2000000",
+      "rooms": 1,
+      "bathrooms": 1,
+      "coords": [-99.1928209, 19.5636957],
+      "photos": [
+        "https://conceptodefinicion.de/wp-content/uploads/2017/12/Apartamento.jpg",
+        "https://lahaus.imgix.net/uploads/real_estate_attachment/picture/269505/19-69.jpg",
+        "https://r-cf.bstatic.com/images/hotel/max1024x768/180/180051990.jpg",
+        "https://thumbs4.properati.com/8/xpaxb6zM-XBBDBbfr5yOdGITFAY=/trim/570x428/smart/filters:strip_icc()/https://properati-s3-co.s3-us-west-2.amazonaws.com/developments/638/https-properati-s3-co-s3-us-west-2-amazonaws-com-temp-developments-editor-e19f7af3-5425-4525-82ef-e63ad5fb0d93-portal2-jpg"
+      ],
+      "services": ["Ascensor", "Bodega", "Estacionamiento", "Seguridad"]
+    },
+    {
+      "id": 2,
+      "type": "Apartamento",
+      "category": "venta",
+      "city": "Bogotá D.C",
+      "sector": "Normandia",
+      "description": "Hermosa propiedad ubicada cerca a muy buenos colegio y hospitales, de facil acceso a trasporte y con todos los servicios publicos a su dispociocion",
+      "value": "2000000",
+      "rooms": 3,
+      "bathrooms": 1,
+      "coords": [-99.1928209, 19.5636957],
+      "photos": [
+        "https://www.estrategiascomerciales.co/wp-content/uploads/2017/09/Solhe%CC%81-Apartamento-Tipo-02-1024x528.jpg",
+        "https://s3.amazonaws.com/imagenes.fincaraiz.com.co/FC_COL/2017/10/17/3139390/apartamento-arriendo-cundinamarca-bogota-206519093.jpg",
+        "https://cdn-co.comparabien.com/field/image/arriendo-apartamento-chapinero-alto-bogot-sala1321103466.jpg",
+        "https://img.clasf.co/2019/06/27/02/21/santa-paula-apartamento-arriendo-bogota-20190627022153_1.jpg"
+      ],
+      "services": ["Ascensor", "Bodega", "Estacionamiento", "Seguridad"]
+    },
+    {
+      "id": 3,
+      "type": "Casa",
+      "category": "arriendo",
+      "city": "Bogotá D.C",
+      "sector": "Chapinero",
+      "description": "Hermosa propiedad ubicada cerca a muy buenos colegio y hospitales, de facil acceso a trasporte y con todos los servicios publicos a su dispociocion",
+      "value": "2000000",
+      "rooms": 4,
+      "bathrooms": 2,
+      "coords": [-99.1928209, 19.5636957],
+      "photos": [
+        "https://http2.mlstatic.com/D_NQ_NP_606720-MCO30555762528_052019-W.jpg",
+        "https://metrocuadrado.blob.core.windows.net/inmuebles/MC1836508/MC1836508_1_p.jpg",
+        "https://s3.amazonaws.com/imagenes.fincaraiz.com.co/FC_COL/2019/06/29/4710352/apartamento-arriendo-cundinamarca-chia-279708835.jpg",
+        "https://s3.amazonaws.com/imagenes.fincaraiz.com.co/FC_COL/2017/04/11/2712118/apartamento-arriendo-risaralda-pereira-261387001.jpg"
+      ],
+      "services": ["Ascensor", "Bodega", "Estacionamiento", "Seguridad"]
+    },
+    {
+      "id": 4,
+      "type": "Apartamento",
+      "category": "venta",
+      "city": "Bogotá D.C",
+      "sector": "Modelia",
+      "description": "Hermosa propiedad ubicada cerca a muy buenos colegio y hospitales, de facil acceso a trasporte y con todos los servicios publicos a su dispociocion",
+      "value": "2000000",
+      "rooms": 2,
+      "bathrooms": 1,
+      "coords": [-99.1928209, 19.5636957],
+      "photos": [
+        "https://r-cf.bstatic.com/images/hotel/max1024x768/180/180051990.jpg",
+        "https://www.suvivienda.com.co/centro/sr503161_sr092472.jpg",
+        "https://s3.amazonaws.com/imagenes.fincaraiz.com.co/FC_COL/2016/03/16/1980124/apartamento-arriendo-cundinamarca-soacha-279698720.jpg"
+      ],
+      "services": ["Ascensor", "Bodega", "Estacionamiento", "Seguridad"]
+    }
+  ]
+}

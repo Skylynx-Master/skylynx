@@ -1,0 +1,57 @@
+@import "../Vars.scss";
+@import "../Media.scss";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-green;
+  -webkit-box-shadow: 13px 14px 8px -12px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 13px 14px 8px -12px rgba(0, 0, 0, 0.5);
+  box-shadow: 13px 14px 8px -12px rgba(0, 0, 0, 0.5);
+}
+
+.Header-logo {
+  width: 120px;
+  height: 40%;
+  margin-left: 10%;
+}
+
+nav {
+  margin: auto 3%;
+  align-items: center;
+}
+
+.Header-links {
+  list-style: none;
+  display: flex;
+}
+
+.Header-links li {
+  display: inline-block;
+  padding: 0px 20px 0px 5px;
+  color: $color-typography;
+  transition: all 0.5s ease 0s;
+  justify-content: center;
+}
+
+.Header-links li:hover {
+  color: $color-white;
+  cursor: pointer;
+}
+
+.Header-links img {
+  height: 32px;
+  width: 32px;
+}
+
+.Header-links_profile {
+  display: none;
+}

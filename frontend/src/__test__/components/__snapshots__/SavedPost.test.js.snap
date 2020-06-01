@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SavedPost Snapshot Test UI SavedPost component 1`] = `
+<div
+  className="SavedPost"
+>
+  <h2
+    className="SavedPost-title"
+  >
+    Se ha guardado su publicación
+  </h2>
+  <img
+    alt=""
+    className="SavedPost-check"
+    src=""
+  />
+  <p
+    className="Savedpost-instructions"
+  >
+    Espere a que uno de nuestros asesores revise y publique su inmueble.
+  </p>
+  <img
+    alt="clock icon"
+    className="SavedPost-clock"
+    src=""
+  />
+  <a
+    className="SavedPost-route"
+    href="/dashboard"
+    onClick={[Function]}
+  >
+    Regresar a mi tablero
+  </a>
+</div>
+`;

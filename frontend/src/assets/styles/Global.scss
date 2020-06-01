@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  font-family: "Signika", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media only screen and (min-width: 46.875em) {
+  .home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "gallery landing";
+    height: 100vh;
+  }
+
+  .search--ubication {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Header-links {
+    display: none;
+  }
+  .Header-links_profile {
+    display: flex;
+    width: 30px;
+    height: 30px;
+  }
+  .Header-icons {
+    display: none;
+  }
+  .Login-form {
+    width: 330px;
+    height: 380px;
+  }
+  .Login-input {
+    width: 287px;
+    height: 61px;
+  }
+
+  .Login-button {
+    font-size: 20px;
+  }
+  .Register-form {
+    width: 330px;
+    height: 495px;
+  }
+  .Register-input {
+    width: 287px;
+    height: 61px;
+  }
+  .Register-form p {
+    font-size: 15px;
+  }
+  .Form-button {
+    font-size: 20px;
+  }
+
+  .MailConfirmation {
+    width: 90vw;
+    height: 40vh;
+  }
+  .MailConfirmation h2 {
+    font-size: 20px;
+  }
+
+  .MailConfirmation img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .AccountConfirmation {
+    width: 90vw;
+    height: 50vh;
+  }
+  .AccountConfirmation h2 {
+    font-size: 20px;
+  }
+
+  .AccountConfirmation img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .SavedPost {
+    width: 90vw;
+    height: 60vh;
+  }
+  .SavedPost h2 {
+    font-size: 20px;
+  }
+
+  .SavedPost-check {
+    width: 90px;
+    height: 90px;
+  }
+  .SavedPost-clock {
+    width: 70px;
+    height: 70px;
+  }
+
+  .SavedPost a {
+    font-size: 16px;
+  }
+
+  .PublishConfirmation {
+    width: 90vw;
+    height: 50vh;
+  }
+
+  .PublishConfirmation h2 {
+    font-size: 20px;
+  }
+
+  .PublishConfirmation img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 40px;
+  }
+
+  .PublishConfirmation a {
+    font-size: 16px;
+  }
+
+  .filters__info {
+    display: block;
+  }
+
+  .SearchAddress input {
+    max-width: 100%;
+  }
+  .filters__info--contain {
+    display: block;
+    margin: 35px;
+  }
+  .filters__services {
+    padding: 60px 0;
+  }
+  .filters__services--contain {
+    display: block;
+  }
+  .link {
+    display: block;
+  }
+}

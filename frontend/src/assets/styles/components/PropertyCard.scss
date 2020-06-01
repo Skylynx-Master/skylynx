@@ -1,0 +1,42 @@
+.property {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 12px;
+  border-bottom: 1px solid #c3c3c3;
+  &__slider {
+    width: 100%;
+    margin-right: 20px;
+  }
+  &__description {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+  }
+}
+/* desktop first que empieces desde el MQ más grande */
+
+@media screen and (max-width: 767px) {
+  .property {
+    width: 100vw;
+  }
+  &__slider {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .property {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    &__description {
+      margin: 10px 0;
+    }
+    &__slider {
+      width: 100vw;
+      margin: 0;
+    }  
+  }
+}
