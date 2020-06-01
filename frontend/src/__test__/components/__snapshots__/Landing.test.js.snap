@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`landing Snapshot Test UI Map component 1`] = `
+<section
+  className="landing"
+>
+  <div
+    className="description"
+  >
+    <h1
+      className="description--title"
+    >
+      Apartacho
+    </h1>
+    <p
+      className="description--intro"
+    >
+       
+      Todos tenemos un sitio, nosotros te ayudamos a conseguirlo
+    </p>
+  </div>
+  <div
+    className="search"
+  >
+    <p
+      className="search__info"
+    >
+      Buscar el lugar ideal es difícil y algunas veces tedioso, acá encontraras las mejores opciones según tus gustos, podrás contactar directamente al oferente ¡Sin intermediarios!,
+    </p>
+  </div>
+  <div
+    className="button"
+  >
+    <button
+      aria-label="button"
+      className="button--send"
+      type="button"
+    >
+      <a
+        href="/filters"
+        onClick={[Function]}
+      >
+        Encontrar
+      </a>
+    </button>
+  </div>
+  <div
+    className="link"
+  >
+    <p>
+      ¿Quieres Publicar?, 
+      <a
+        href="/register"
+        onClick={[Function]}
+      >
+        Regístrate
+      </a>
+    </p>
+  </div>
+</section>
+`;
