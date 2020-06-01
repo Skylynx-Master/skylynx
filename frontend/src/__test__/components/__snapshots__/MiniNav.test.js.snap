@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MiniNav Snapshot Test UI MiniNav component 1`] = `
+<ul
+  className="sc-AxjAm buYwmk MiniNav-links"
+>
+  <a
+    href="/filters"
+    onClick={[Function]}
+  >
+    <li>
+      Buscar
+    </li>
+  </a>
+  <a
+    href="/dashboard"
+    onClick={[Function]}
+  >
+    <li>
+      Favoritos
+    </li>
+  </a>
+  <a
+    href="/create-post"
+    onClick={[Function]}
+  >
+    <li>
+      Crear Publicación
+    </li>
+  </a>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <li>
+      Inicio
+    </li>
+  </a>
+</ul>
+`;

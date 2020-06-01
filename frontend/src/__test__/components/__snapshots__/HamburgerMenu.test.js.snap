@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HamburgerMenu Snapshot Test UI Hamburger Menu component 1`] = `
+Array [
+  <div
+    className="sc-AxirZ gfqYih IconBurger"
+    onClick={[Function]}
+    open={false}
+  >
+    <div />
+    <div />
+    <div />
+  </div>,
+  <ul
+    className="sc-AxjAm buYwmk"
+    open={false}
+  >
+    <a
+      href="/filters"
+      onClick={[Function]}
+    >
+      <li>
+        Buscar
+      </li>
+    </a>
+    <a
+      href="/dashboard"
+      onClick={[Function]}
+    >
+      <li>
+        Favoritos
+      </li>
+    </a>
+    <a
+      href="/dashboard"
+      onClick={[Function]}
+    >
+      <li>
+        Crear Publicación
+      </li>
+    </a>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <li>
+        Inicio
+      </li>
+    </a>
+  </ul>,
+]
+`;
