@@ -1,7 +1,7 @@
-[Back apartacho project readme ](../README.md)
 
-![Apartacho](../frontend/src/assets/static/ApartachoLogo.png)
-=========
+.. _Back apartacho project readme : ../README.md
+
+.. image:: ../frontend/src/assets/static/ApartachoLogo.png
 
 The apartacho is best real estate online
 
