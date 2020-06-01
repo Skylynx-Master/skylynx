@@ -15,7 +15,7 @@
     "description     "
     "search   "
     "button   "
-    ".   ";
+    "link  ";
 }
 
 /* specific item styles */
@@ -50,5 +50,16 @@
   &--send {
     text-align: center;
     @include button-action;
+  }
+}
+
+.link {
+  grid-area: link;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 10px;
+  & a {
+    text-decoration: underline;
   }
 }

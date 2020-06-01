@@ -31,15 +31,31 @@ class PropertyViewSet(GenericViewSet,
     # Filters
     filter_backends = (SearchFilter, OrderingFilter, DjangoFilterBackend)
     search_fields = ('price', 'overview')
-    ordering_fields = ('price',
-                       'area',
-                       'construction_year',
-                       'price_mts',
-                       'created',
-                       'room_count')
-    ordering = ('-price',
-                '-area',
-                '-construction_year',
-                '-price_mts',
-                '-created',
-                '-room_count')
+    ordering_fields = (
+        'price',
+        'area',
+        'price_mts',
+        'created',
+        'bathroom_count',
+        'room_count'
+    )
+    ordering = (
+        '-price',
+        '-area',
+        '-price_mts',
+        '-created',
+        '-bathroom_count',
+        '-room_count')
+    filter_fields = (
+        'has_furnished',
+        'has_heated',
+        'has_pool',
+        'has_parking',
+        'has_security',
+        'has_warehouse',
+        'has_elevator',
+        'room_count',
+        'bathroom_count',
+        'offer_type',
+        'service_type',
+    )
