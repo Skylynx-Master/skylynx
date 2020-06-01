@@ -1,5 +1,5 @@
 
-.. _Back apartacho project readme : ../README.md
+.. _`Back apartacho project readme`: ../README.md
 
 .. image:: ../frontend/src/assets/static/ApartachoLogo.png
 
