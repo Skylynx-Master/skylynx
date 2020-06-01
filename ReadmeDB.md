@@ -26,7 +26,7 @@ Cities | city ​​from which the Property
 addresses | Entity that links the places where the properties are
 Offers | Entity that manages the offers made by bidders and real estate
 Publications | Entity that keeps applications such as property offers.
-Tracings | Entity that is responsible for storing the visits do interested in your property
+Trackings | Entity that is responsible for storing the visits do interested in your property
 Favorites | Entity that stores mark as favorites Property that can be accessed later
 Images|Entity to manage visual content such as photos and / or videos of real estate, users or entities related objects or photographic media.
 
@@ -49,7 +49,7 @@ images | X | M-M | X | X | X | X | X | X | X | X
 
 #### Step 3 - Attributes of entities
 
-offers_offer
+Offers
 
 name | type | key | 
 -----|------|-----|
@@ -63,7 +63,7 @@ user_id | integer | fk
 created | timestamp | 
 modified | timestamp | 
 		
-favorites
+Favorites
 
 name | type | key | 
 -----|------|-----|
@@ -75,7 +75,7 @@ is_published_id | integer | fk
 property_id | integer | fk
 user_id | integer | fk
 		
-publications
+Publications
 
 name | type | key | 
 -----|------|-----|
@@ -88,7 +88,7 @@ description | varchar(150) |
 property_id | integer | fk
 user_admin_id | integer | fk
 		
-images 
+Images 
 
 name | type | key | 
 -----|------|-----|
@@ -98,7 +98,7 @@ created | timestamp |
 modified | timestamp | 
 url | varchar(100) | 
 
-trackings
+Trackings
 
 name | type | key | 
 -----|------|-----|
@@ -109,7 +109,7 @@ created | timestamp |
 modified | timestamp | 
 is_active | boolean | 
 
-properties
+Properties
 
 name | type | key | 
 -----|------|-----|
@@ -138,7 +138,7 @@ overview | varchar(1000) |
 is_active | boolean | 
 service_type | integer | 
 		
-addresses
+Addresses
 
 name | type | key |
 -----|------|-----|
@@ -155,7 +155,7 @@ latitude | numeric(12,9) |
 longitude | numeric(12,9) | 
 is_active | boolean | 
 
-cities 
+Cities 
 
 name | type | key | 
 -----|------|-----|
@@ -168,7 +168,7 @@ latitude | numeric(12,9) |
 longitude | numeric(12,9) | 
 is_active | boolean | 
 
-countries
+Countries
 
 name | type | key | 
 -----|------|-----|
@@ -181,7 +181,7 @@ iso_2 | varchar(2) |
 phone_code | varchar(3) | 
 is_active | boolean | 
 
-users
+Users
 
 name | type | key | 
 -----|------|-----|
