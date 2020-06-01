@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React from "react";
 import PropertyList from '../components/PropertyList'
 import Map from '../components/Map'
 import '../assets/styles/pages/search.scss'
