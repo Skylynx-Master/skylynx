@@ -23,10 +23,10 @@ const Header = () => {
             <img src={SearchIcon} alt="search icon"></img>
             <li className="Header-icons_search">Buscar</li>
           </Link>
-          <a className="Header-icons">
+          <Link to="/search" className="Header-icons">
             <img src={FavoritesIcon} alt="favorites icon"></img>
             <li className="Header-icons_favorites">Favoritos</li>
-          </a>
+          </Link>
           <Link to="/create-post" className="Header-icons">
             <img src={CreatePost} alt="create post icon"></img>
             <li className="Header-icons_createpost">Crear Publicación</li>

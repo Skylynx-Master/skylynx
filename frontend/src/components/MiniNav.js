@@ -23,7 +23,7 @@ const Ul = styled.ul`
     width: 45%;
     padding-top: 3.5rem;
     transition: transform 0.3s ease-in-out;
-
+    z-index: 2;
     li {
       color: #3f3f44;
       text-align: center;
@@ -33,11 +33,11 @@ const Ul = styled.ul`
 
 const MiniNav = ({ open }) => {
   return (
-    <Ul className="MiniNav-links"open={open}>
+    <Ul className="MiniNav-links" open={open}>
       <Link to="/filters">
         <li>Buscar</li>
       </Link>
-      <Link to="/dashboard">
+      <Link to="/search">
         <li>Favoritos</li>
       </Link>
       <Link to="/create-post">
@@ -51,4 +51,3 @@ const MiniNav = ({ open }) => {
 };
 
 export default MiniNav;
-

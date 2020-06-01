@@ -12,7 +12,7 @@ Array [
     <div />
   </div>,
   <ul
-    className="sc-AxjAm buYwmk"
+    className="sc-AxjAm buYwmk MiniNav-links"
     open={false}
   >
     <a
@@ -32,7 +32,7 @@ Array [
       </li>
     </a>
     <a
-      href="/dashboard"
+      href="/create-post"
       onClick={[Function]}
     >
       <li>
