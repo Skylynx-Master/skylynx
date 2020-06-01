@@ -41,7 +41,7 @@ const Register = () => {
           type="text"
           name="username"
           className="Register-input"
-          placeholder="Contraseña"
+          placeholder="Usuario"
           ref={register({ required: false })}
         ></input>
         <input
