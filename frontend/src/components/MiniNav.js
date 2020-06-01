@@ -33,14 +33,14 @@ const Ul = styled.ul`
 
 const MiniNav = ({ open }) => {
   return (
-    <Ul open={open}>
+    <Ul className="MiniNav-links"open={open}>
       <Link to="/filters">
         <li>Buscar</li>
       </Link>
       <Link to="/dashboard">
         <li>Favoritos</li>
       </Link>
-      <Link to="/dashboard">
+      <Link to="/create-post">
         <li>Crear Publicación</li>
       </Link>
       <Link to="/">
@@ -51,3 +51,4 @@ const MiniNav = ({ open }) => {
 };
 
 export default MiniNav;
+
