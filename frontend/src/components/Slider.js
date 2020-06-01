@@ -36,10 +36,10 @@ const Slider = ({photos = DEFAULT_ARRAY}) => {
         })
       }
       <button id='goLeft' onClick={handleLeft}>
-        <i class="fas fa-angle-left"></i>
+        <i className="fas fa-angle-left"></i>
       </button>
       <button id='goRight' onClick={handleRight}>
-        <i class="fas fa-angle-right"></i>
+        <i className="fas fa-angle-right"></i>
       </button>
     </div>
   );

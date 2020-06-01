@@ -36,7 +36,7 @@ const Detail = ({ match }) => {
             </div>
             <button aria-label="Agregar a favoritos" className='detail__fav' onClick={() => setLiked(!liked)}>
               { 
-                (liked)? <i class="fas fa-star"></i> : <i class="far fa-star"></i>
+                (liked)? <i className="fas fa-star"></i> : <i className="far fa-star"></i>
               }
             </button>
             <div className='detail__description'>
