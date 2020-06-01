@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/styles/components/Landing.scss'
+import { Link } from "react-router-dom";
 
 const Landing = () => {
 
@@ -11,15 +12,17 @@ const Landing = () => {
         <p className="description--intro"> Todos tenemos un sitio, nosotros te ayudamos a conseguirlo</p>
       </div>
       <div className="search">
-      <input
+
+        <p className="search__info">Buscar el lugar ideal es difícil y algunas veces tedioso, acá encontraras las mejores opciones según tus gustos, podrás contactar directamente al oferente ¡Sin intermediarios!,</p>
+      {/* <input
           type="text"
           className="search--ubication"
           placeholder="Ubicacion"
-        ></input>
+        ></input> */}
       </div>
       <div className="button">
       <button type="button" className="button--send">
-          Encontrar
+      <Link to="/filters">Encontrar</Link>
         </button>
       </div>
 

@@ -10,6 +10,10 @@ from apartacho.properties.views import PropertyViewSet
 from apartacho.cities.views import CitiesViewSet
 from apartacho.users.views import UserViewSet
 from apartacho.publications.views import PublicationViewSet
+from apartacho.favorites.views import FavoriteViewSet
+from apartacho.offers.views import OfferViewSet
+from apartacho.trackings.views import TrackingViewSet
+from apartacho.images.views import ImagesViewSet
 
 
 router = DefaultRouter()
@@ -18,7 +22,11 @@ router.register('countries', CountryViewSet, basename='country')
 router.register('cities', CitiesViewSet, basename='city')
 router.register('properties', PropertyViewSet, basename='property')
 router.register('publications', PublicationViewSet, basename='publication')
+router.register('favorites', FavoriteViewSet, basename='favorite')
 router.register('users', UserViewSet, basename='user')
+router.register('offers', OfferViewSet, basename='offer')
+router.register('trackings', TrackingViewSet, basename='tracking')
+router.register('images', ImagesViewSet, basename='image')
 
 urlpatterns = [
     # Django Admin, use {% url 'admin:index' %}

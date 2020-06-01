@@ -4,7 +4,7 @@
 from rest_framework import serializers
 
 # Model
-from apartacho.properties.models import Property
+from apartacho.properties.models import Property, OFFERS_TYPES, SERVICE_TYPES
 
 import datetime
 now = datetime.datetime.now()
@@ -40,18 +40,15 @@ class PropertyModelSerializer(serializers.ModelSerializer):
     )
 
     door_count = serializers.IntegerField(
-        required=True,
         min_value=0,
         max_value=2000,
     )
 
     construction_year = serializers.IntegerField(
-        required=True,
         max_value=now.year,
     )
 
     property_condition = serializers.FloatField(
-        required=True,
         min_value=1,
         max_value=5.0,
     )
@@ -61,6 +58,16 @@ class PropertyModelSerializer(serializers.ModelSerializer):
         min_length=50,
         max_length=1000,
         trim_whitespace=True,
+    )
+
+    offer_type = serializers.ChoiceField(
+        required=True,
+        choices=OFFERS_TYPES,
+    )
+
+    service_type = serializers.ChoiceField(
+        required=True,
+        choices=SERVICE_TYPES,
     )
 
     has_furnished = serializers.BooleanField(default=False)

@@ -1,0 +1,91 @@
+@import "../Vars.scss";
+
+// .filters{
+//   display: grid;
+//   // margin-top: 10px;
+//   grid-template-columns: 1fr;
+//   grid-template-rows: 1fr;
+//   grid-template-areas: "landing";
+//   height: 100vh;
+//   overflow-y: hidden;
+//
+
+.filters {
+  & h1 {
+    padding-top: 20px;
+    text-align: center;
+  }
+  & .search--ubication {
+    display: block;
+    margin: 10px auto;
+  }
+
+  & label {
+    display: flex;
+    align-items: center;
+  }
+
+  &__ubication {
+    width: 100%;
+    height: auto;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  &__info--contain {
+    display: flex;
+    height: 60px;
+    // margin-bottom: 30px;
+  }
+  &__services {
+    //border-top: 1px solid $color-typography;
+    padding: 40px 0;
+    width: 100%;
+    height: auto;
+
+    &--contain {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.button--filter {
+  @include button-action;
+  margin-top: 10px;
+  display: block;
+  margin: 10px auto;
+}
+
+.select-info {
+  @include select-general;
+}
+
+.radio-options {
+  padding: 10px;
+  margin-right: 30px;
+}
+
+.group_radioButtons {
+  @include center-flex;
+}
+
+.radio-item {
+  margin: 5px;
+}
+.title__services {
+  margin-bottom: 30px;
+}
+
+.filters__ubication p {
+  padding: 20px 0;
+  text-align: center;
+}

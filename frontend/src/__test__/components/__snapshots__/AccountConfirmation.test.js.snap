@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AccountConfirmation Snapshot Test UI AccountConfirmation component 1`] = `
+<div
+  className="AccountConfirmation"
+>
+  <h2
+    className="AccountConfirmation-title"
+  >
+    Se ha confirmado su cuenta!!!
+  </h2>
+  <img
+    alt="check image of account"
+    className="AccountConfirmation-image"
+    src=""
+  />
+  <a
+    href="/login"
+    onClick={[Function]}
+  >
+    <button
+      className="AccountConfirmation-button"
+      type="button"
+    >
+      Iniciar Sesión
+    </button>
+  </a>
+</div>
+`;

@@ -264,3 +264,5 @@ lahause/media/
 !.envs/.local/
 .idea
 backend/
+
+*.csv

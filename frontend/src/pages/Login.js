@@ -1,19 +1,62 @@
-import React from "react";
-import {Link} from "react-router-dom";
-import "../assets/styles/pages/LogIn.scss"
+import React, { useContext, useEffect } from "react";
+import { Link, useHistory, withRouter } from "react-router-dom";
+import "../assets/styles/pages/LogIn.scss";
+
+import { useForm } from "react-hook-form";
+import { AuthContext } from "../utils/AuthContext";
+import { MessageContext } from "../utils/MessageContext";
 
 const Login = () => {
-  return(
+  const { authenticated, error, handleLogin, data } = useContext(AuthContext);
+  const { register, handleSubmit, errors } = useForm();
+  const { setMessage } = useContext(MessageContext);
+  const history = useHistory();
+
+  const onSubmit = (res) => {
+    handleLogin(res);
+  };
+
+  useEffect(() => {
+    setMessage("");
+    if (authenticated) {
+      setMessage("Login Success");
+      // history.push("/home");
+    } else if (error !== "") {
+      setMessage("Login Denied", error);
+    }
+  }, [authenticated, error]);
+
+  return (
     <div className="Login-form">
       <h1>Iniciar Sesión</h1>
-      <form>
-        <input type="email" className="Login-input" placeholder="Correo"></input>
-        <input type="password" className="Login-input" placeholder="Contraseña"></input>
-        <p>Si no estás registrado, <Link to="/register">Regístrate</Link></p>
-        <button type="button" className="Login-button" >Iniciar</button>
+      <form onSubmit={handleSubmit(onSubmit)}>
+        <input
+          type="email"
+          name="email"
+          className="Login-input"
+          placeholder="Correo"
+          ref={register({ required: false })}
+        ></input>
+        {errors.email && <span className="login__error">Campo requerido</span>}
+        <input
+          type="password"
+          name="password"
+          className="Login-input"
+          placeholder="Contraseña"
+          ref={register({ required: false })}
+        ></input>
+        {errors.password && (
+          <span className="login__error">Campo requerido</span>
+        )}
+        <p>
+          Si no estás registrado, <Link to="/register">Regístrate</Link>
+        </p>
+        <button type="button" className="Login-button" type="submit">
+          Iniciar
+        </button>
       </form>
     </div>
-  )
+  );
 };
 
 export default Login;

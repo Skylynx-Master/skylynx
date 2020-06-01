@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MailConfirmation Snapshot Test UI MailConfirmation component 1`] = `
+<div
+  className="MailConfirmation"
+>
+  <h2
+    className="MailConfirmation-title"
+  >
+    Verifique su correo para confirmar su cuenta
+  </h2>
+  <img
+    alt="mail confirmation logo"
+    className="MailConfirmation-image"
+    src=""
+  />
+</div>
+`;

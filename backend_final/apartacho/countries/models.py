@@ -17,7 +17,8 @@ class Country(ApartachoModel):
     name = models.CharField(
         # Colombia
         verbose_name='country name',
-        max_length=50
+        max_length=50,
+        unique=True
     )
 
     iso_3 = models.CharField(
@@ -25,7 +26,8 @@ class Country(ApartachoModel):
         verbose_name="iso three",
         max_length=3,
         blank=True,
-        null=True
+        null=True,
+        unique=True
     )
 
     iso_2 = models.CharField(
@@ -33,7 +35,8 @@ class Country(ApartachoModel):
         verbose_name="iso two",
         max_length=2,
         blank=True,
-        null=True
+        null=True,
+        unique=True
     )
 
     phone_code = models.CharField(
@@ -53,3 +56,6 @@ class Country(ApartachoModel):
     def __str__(self):
         """Return country name."""
         return self.name
+
+    class Meta:
+        ordering = ['name']

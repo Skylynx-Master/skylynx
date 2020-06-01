@@ -8,17 +8,17 @@ from rest_framework.mixins import (CreateModelMixin,
                                    UpdateModelMixin)
 
 # Serializers
-from apartacho.countries.serializers import FavoriteSerializer
+from apartacho.favorites.serializers import FavoriteSerializer
 
 # Models
 from apartacho.favorites.models import Favorite
 
 
 class FavoriteViewSet(GenericViewSet,
-                     CreateModelMixin,
-                     RetrieveModelMixin,
-                     UpdateModelMixin,
-                     ListModelMixin):
+                      CreateModelMixin,
+                      RetrieveModelMixin,
+                      UpdateModelMixin,
+                      ListModelMixin):
     """Favorite views."""
 
     queryset = Favorite.objects.filter(is_favorite=True)
