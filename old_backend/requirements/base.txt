@@ -6,7 +6,7 @@ wheel==0.34.2
 psycopg2==2.8.5
 
 # Django
-django==3.0.7
+django==3.0.14
 
 # Environment
 django-environ==0.4.5
