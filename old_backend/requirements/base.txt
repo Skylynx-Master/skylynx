@@ -2,7 +2,7 @@
 pytz==2020.1
 python-slugify==4.0.0
 Pillow==7.1.2
-wheel==0.34.2
+wheel==0.38.1
 psycopg2==2.8.5
 
 # Django
